@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NavbarItem from "@/components/NavbarItem/NavbarItem";
 import NavbarItems from "@/constants/Navbar/Navbar";
-import NavbarData from "@/constants/Navbar/NavbarData";
+import NavbarData from "@/components/Navbar/NavbarData";
 import Link from "next/link";
 
 export default function Navbar() {
