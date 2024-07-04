@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="upper mt-4 flex flex-row justify-between pl-32 pr-32 pt-14 pb-14 bg-[#0C356A] rounded-t-[2.6rem]">
         <div className="gyanplug">
           <div className="flex justify-center items-center absolute">
-            <span className="text-[#FDFDFD] text-[2.7rem] tracking-wide font-inter font-medium break-words">
+            <span className="text-[#FDFDFD] text-[2.7rem] tracking-wider font-inter font-medium break-words">
               Gya
             </span>
             <Image
@@ -17,11 +17,11 @@ export default function Footer() {
               src="images/N-logo.svg"
               className="pl-[0.25rem] pr-[0.25rem] relative top-[4px]"
             />
-            <span className="text-[#FDFDFD] text-[2.7rem] tracking-wide font-inter font-medium break-words">
+            <span className="text-[#FDFDFD] text-[2.7rem] tracking-wider font-inter font-medium break-words">
               plug
             </span>
           </div>
-          <div className="relative top-[5.5rem] text-[#FDFDFD] text-[1.25rem] font-[400] leading-[30px] break-words font-folito">
+          <div className="relative top-[5.5rem] tracking-tight text-[#FDFDFD] text-[1.25rem] font-[400] leading-[30px] break-words font-folito">
             Wisdom Rd, Sco 142 Nirman Point
             <br />
             +1283871239190213021
@@ -38,16 +38,16 @@ export default function Footer() {
               </span>
             </div>
             <div className="subheading flex flex-col gap-[0.75rem]">
-              <span className="text-[#FDFDFD] text-[1.25rem] font-Folito font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[1.25rem] tracking-tight font-Folito font-[300] break-words">
                 Book Session
               </span>
-              <span className="text-[#FDFDFD] text-[1.25rem] font-Folito font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[1.25rem] tracking-tight font-Folito font-[300] break-words">
                 Why Gyanplug?
               </span>
-              <span className="text-[#FDFDFD] text-[1.25rem] font-Folito font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[1.25rem] tracking-tight font-Folito font-[300] break-words">
                 How it works?
               </span>
-              <span className="text-[#FDFDFD] text-[1.25rem] font-Folito font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[1.25rem] tracking-tight font-Folito font-[300] break-words">
                 Testimonials
               </span>
             </div>
@@ -59,10 +59,10 @@ export default function Footer() {
               </span>
             </div>
             <div className="subheading flex flex-col gap-[0.75rem]">
-              <span className="text-[#FDFDFD] text-[1.25rem] font-Folito font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[1.25rem] tracking-tight font-Folito font-[300] break-words">
                 Terms & Conditions
               </span>
-              <span className="text-[#FDFDFD] text-[1.25rem] font-Folito font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[1.25rem] tracking-tight font-Folito font-[300] break-words">
                 Privacy policy
               </span>
             </div>
