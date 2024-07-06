@@ -4,7 +4,7 @@ import ButtonComponent from "../ButtonComponent/Button";
 export default function Footer() {
   return (
     <div>
-      <div className="upper mt-4 flex flex-row justify-between pl-32 pr-32 pt-14 pb-14 bg-[#0C356A] rounded-t-[2.6rem]">
+      <div className="upper mt-4 flex flex-row justify-between pl-32 pr-32 pt-14 pb-14 bg-[#00357A] rounded-t-[2.6rem]">
         <div className="gyanplug">
           <div className="flex justify-center items-center absolute">
             <span className="text-[#FDFDFD] text-[2.7rem] tracking-wider font-inter font-medium break-words">
@@ -15,7 +15,7 @@ export default function Footer() {
               height={32}
               alt="N"
               src="images/N-logo.svg"
-              className="pl-[0.25rem] pr-[0.25rem] relative top-[4px]"
+              className="pl-[0.25rem] pr-[0.25rem] relative top-[4px] cursor-pointer"
             />
             <span className="text-[#FDFDFD] text-[2.7rem] tracking-wider font-inter font-medium break-words">
               plug
@@ -71,18 +71,21 @@ export default function Footer() {
         <div className="logos">
           <div className="logoscontainer flex flex-row gap-4">
             <Image
+            className="cursor-pointer"
               width={63.48}
               height={63.48}
               alt="Ins"
               src="images/facebook.svg"
             ></Image>
             <Image
+            className="cursor-pointer"
               width={63.48}
               height={63.48}
               alt="Ins"
               src="images/twitter.svg"
             ></Image>
             <Image
+            className="cursor-pointer"
               width={63.48}
               height={63.48}
               alt="Ins"

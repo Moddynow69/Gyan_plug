@@ -10,9 +10,9 @@ export default function NavbarItem({
   return (
     <Link
       href={link}
-      className="px-4 py-3 justify-center items-center gap-2 flex bg-transparent hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
+      className="xl:px-4 px-1 xl:py-3 py-1 justify-center items-center gap-2 flex bg-transparent hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
     >
-      <div className="text-center text-emerald-950 text-xl font-medium font-['DM Sans']">
+      <div className="text-center text-[#002324] text-xl font-medium whitespace-nowrap ">
         {title}
       </div>
     </Link>

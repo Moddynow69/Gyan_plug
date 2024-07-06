@@ -1,11 +1,13 @@
+import LogoCarousel from "@/components/Carousels/LogoCarousel/LogoCarousel";
+import StoriesCarousel from "@/components/Carousels/StoriesCarousel/StoriesCarousel";
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
+import Home from "./_sections/Home/Home";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <div className="w-full h-[146px] flex items-end justify-center">
-      <Navbar />
-      </div>
+    <div className="h-auto w-screen flex flex-col bg-white">
+      <Home />
     </div>
   );
 }
