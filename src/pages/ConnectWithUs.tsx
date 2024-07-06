@@ -12,32 +12,32 @@ export default function ConnectWithUs() {
             width={107}
             height={107}
             alt="*"
-            className="relative -top-7 left-52"
+            className="relative -top-7 left-48"
           />
           <Image
             src="/images/person2.png"
             width={111}
             height={111}
             alt="*"
-            className="relative -top-0 left-[23rem]"
+            className="relative -top-0 left-[22rem]"
           />
           <Image
             src="/images/person3.png"
             width={165}
             height={165}
             alt="*"
-            className="relative -top-7 left-[7rem]"
+            className="relative -top-7 left-[6rem]"
           />
           <Image
             src="/images/person4.png"
             width={87}
             height={87}
             alt="*"
-            className="relative -top-16 left-[27rem]"
+            className="relative -top-16 left-[24rem]"
           />
         </div>
-        <div className="flex flex-col">
-          <div className="flex flex-col tracking-tighter">
+        <div className="flex flex-col min-w-[650px]">
+          <div className="flex flex-col tracking-tight w-[100%]">
             <div className="text-center font-folito text-[3.4rem] leading-[133%] font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
               Soon Mentor Booking at
             </div>
@@ -45,10 +45,10 @@ export default function ConnectWithUs() {
               Your Fingertips&#33;
             </div>
           </div>
-          <div className="text-center leading-[140%] text-[1.5rem] text-[rgba(253,253,253,0.60)] pt-6 font-medium tracking-tight">
+          <div className="text-center leading-[140%] text-[1.5rem] text-[rgba(253,253,253,0.60)] pt-6 font-medium tracking-tight w-[100%]">
             Sign up now to recieve a notification <br /> when our app goes live!
           </div>
-          <div className="pt-20">
+          <div className="pt-20 w-[100%]">
             <NotifyMe />
           </div>
         </div>
