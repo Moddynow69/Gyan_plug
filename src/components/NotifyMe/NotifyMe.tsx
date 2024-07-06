@@ -17,9 +17,9 @@ export default function NotifyMe() {
         </div>
         <button
           type="submit"
-          className="flex justify-center items-center rounded-md bg-[#14A4E1] py-4 px-6 text-[1.5rem] font-semibold tracking-tight shadow-lg shadow-cyan-500/50"
+          className="flex justify-center items-center rounded-md bg-[#14A4E1] py-4 px-8 text-[1.5rem] font-semibold tracking-tight shadow-lg shadow-cyan-500/50"
         >
-          Notify me&#33;
+          Notify Me&#33;
         </button>
       </div>
     </form>

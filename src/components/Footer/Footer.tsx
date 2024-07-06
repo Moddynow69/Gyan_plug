@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ButtonComponent from "../ButtonComponent/Button";
+import { inter } from "@/app/fonts";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="upper flex flex-row justify-between pl-32 pr-32 pt-14 pb-14 bg-[#0C356A] rounded-t-[2.6rem]">
         <div className="gyanplug">
           <div className="flex justify-center items-center absolute">
-            <span className="text-[#FDFDFD] text-[2.7rem] tracking-wider font-inter font-medium break-words">
+            <span className={`text-[#FDFDFD] text-[2.7rem] tracking-tight ${inter.className} font-medium break-words`}>
               Gya
             </span>
             <Image
@@ -17,7 +18,7 @@ export default function Footer() {
               src="images/N-logo.svg"
               className="px-[0.25rem] relative top-[4px]"
             />
-            <span className="text-[#FDFDFD] text-[2.7rem] tracking-wider font-inter font-medium break-words">
+            <span className={`text-[#FDFDFD] text-[2.7rem] tracking-tight ${inter.className} font-medium break-words`}>
               plug
             </span>
           </div>

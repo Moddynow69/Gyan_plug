@@ -8,40 +8,40 @@ export default function ConnectWithUs() {
       <div className="flex flex-row justify-between px-10 font-folito">
         <div className="relative">
           <Image
-            src="images/person1.svg"
+            src="/images/person1.png"
             width={107}
             height={107}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 -top-7 left-52"
+            className="relative -top-7 left-52"
           />
           <Image
-            src="images/person2.svg"
+            src="/images/person2.png"
             width={111}
             height={111}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 -top-0 left-[23rem]"
+            className="relative -top-0 left-[23rem]"
           />
           <Image
-            src="images/person3.svg"
+            src="/images/person3.png"
             width={165}
             height={165}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 -top-7 left-[7rem]"
+            className="relative -top-7 left-[7rem]"
           />
           <Image
-            src="images/person4.svg"
+            src="/images/person4.png"
             width={87}
             height={87}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 -top-16 left-[27rem]"
+            className="relative -top-16 left-[27rem]"
           />
         </div>
         <div className="flex flex-col">
           <div className="flex flex-col tracking-tighter">
-            <div className="text-center font-folito text-[3.4rem] leading-[133%] font-[700] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
+            <div className="text-center font-folito text-[3.4rem] leading-[133%] font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
               Soon Mentor Booking at
             </div>
-            <div className="text-center font-folito text-[3.4rem] leading-[133%] font-[700] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
+            <div className="text-center font-folito text-[3.4rem] leading-[133%] font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
               Your Fingertips&#33;
             </div>
           </div>
@@ -54,32 +54,32 @@ export default function ConnectWithUs() {
         </div>
         <div className="relative">
           <Image
-            src="images/person5.svg"
+            src="/images/person5.png"
             width={86}
             height={86}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 right-0 -top-4"
+            className="relative right-0 -top-4"
           />
           <Image
-            src="images/person6.svg"
+            src="/images/person6.png"
             width={139}
             height={139}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 right-[17rem] -top-4"
+            className="relative right-[17rem] -top-4"
           />
           <Image
-            src="images/person7.svg"
+            src="/images/person7.png"
             width={113}
             height={113}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 right-[8rem] -top-4"
+            className="relative right-[8rem] -top-4"
           />
           <Image
-            src="images/person8.svg"
+            src="/images/person8.png"
             width={102}
             height={102}
             alt="*"
-            className="relative shadow-lg shadow-cyan-500/50 right-[24rem] -top-4"
+            className="relative right-[24rem] -top-4"
           />
         </div>
       </div>
