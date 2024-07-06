@@ -1,9 +1,18 @@
-import { Props } from "next/script";
+import React from 'react';
 
-export default function Heading({content}: Props) {
+type Props = {
+  content: string;
+  from: string;
+  to: string;
+}
+
+export default function Heading({content,from,to}: Props) {
   return (
-    <div className="text-center font-folito text-[54px] font-black leading-[60px] bg-clip-text text-transparent bg-gradient-to-r from-[#041020] to-[#0174BE]">
-        {content}
+    <div className="text-center font-folito text-[54px] font-black leading-[60px]">
+        <span className=" bg-clip-text text-transparent"
+        style={{
+          backgroundImage: `linear-gradient(90deg, ${from} 0%, ${to} 100%)`
+        }}>{content}</span>
     </div>
   );
 }

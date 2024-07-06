@@ -12,8 +12,8 @@ interface Logo {
 export default function LogoCarousel() {
   return (
     <div className="h-[109px] w-[576px] relative bg-white">
-      <div className="absolute h-full top-0 left-0 w-[94px] bg-gradient-to-r from-[#F5FBFF] to-[#F5FBFF00]"></div>
-      <div className="absolute h-full top-0 right-0 w-[94px] bg-gradient-to-l from-[#F5FBFF] to-[#F5FBFF00]"></div>
+      <div className="absolute z-50 h-full top-0 left-0 w-[94px] bg-gradient-to-r from-[#F5FBFF] to-[#F5FBFF00]"></div>
+      <div className="absolute z-50 h-full top-0 right-0 w-[94px] bg-gradient-to-l from-[#F5FBFF] to-[#F5FBFF00]"></div>
       <div className="h-full w-full flex overflow-hidden">
         <div className={`flex gap-6 ${style["slide-track"]}`}>
           {LogoCarouselData.map((logo: Logo, index: number) => (
