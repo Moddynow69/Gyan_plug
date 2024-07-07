@@ -1,23 +1,27 @@
 const NavbarItems: { title: string; link: string }[] = [
   {
     title: "About Us",
-    link: "#about",
+    link: "/#about",
   },
   {
     title: "How It Works",
-    link: "#how-it-works",
+    link: "/#how-it-works",
   },
   {
     title: "Mentors",
-    link: "#mentors",
+    link: "/#mentors",
   },
   {
     title: "Success Stories",
-    link: "#success-stories",
+    link: "/#success-stories",
   },
   {
     title: "FAQs",
-    link: "#faqs",
+    link: "/#faqs",
+  },
+  {
+    title: "Partners",
+    link: "/partners",
   },
 ];
 export default NavbarItems;

@@ -4,11 +4,11 @@ import ButtonComponent from "@/components/ButtonComponent/Button";
 import Image from "next/image";
 export default function Home() {
   return (
-    <div className="h-screen w-screen flex flex-col">
+    <div className="min-h-screen h-auto w-screen flex flex-col relative">
         <Navbar />
-      <Image src={'/images/circles.svg'} height={1738-795} width={1738-724} alt="" className="absolute right-0 bottom-0"/>
-      <Image src={'/images/MapChart.svg'} height={1520.16-539.16} width={1280-408} alt="" className="absolute right-0 bottom-0"/>
-      <div className="h-full w-full flex justify-start pl-[120px] pt-[290px]">
+      <Image src={'/images/circles.svg'} height={1738-795} width={1738-724} alt="" className="absolute right-0 bottom-0 z-0"/>
+      <Image src={'/images/MapChart.svg'} height={1520.16-539.16} width={1280-408} alt="" className="absolute right-0 bottom-0 z-0"/>
+      <div className="h-full w-full flex justify-start pl-[120px] pt-[290px] z-10">
         <div className="w-[654px] h-[588.84px] flex-col justify-start items-start gap-[55px] inline-flex">
          <div className="w-full h-[364.84px] flex-col justify-start items-start gap-[54px] inline-flex">
             <div className="w-full h-full flex-col justify-start items-start gap-[19.84px] inline-flex">

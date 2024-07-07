@@ -1,46 +1,98 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import StoriesCarouselData from "@/constants/Carousels/StoriesCarousel/StoriesCarouselData";
 import StoriesCarouselTItem from "./StoriesCarouselItem";
+import Image from "next/image";
+
 export default function StoriesCarousel() {
   const scArr = useRef<HTMLDivElement>(null);
+  const [scrolls, setScrolls] = useState<number>(0);
+  const [scrolling, setScrolling] = useState<boolean>(false);
+  const scroll: number = 832; // Change this for responsiveness
+
+  const slideNext = () => {
+    if (scrolls === StoriesCarouselData.length - 1) return;
+    setScrolling(true);
+    const elem = scArr.current;
+    if (elem == null) return;
+    elem.scrollTo({
+      left: scroll * (scrolls + 1),
+      behavior: "smooth",
+    });
+    setScrolls(scrolls + 1);
+    setTimeout(() => setScrolling(false), 600);
+  };
+
+  const slidePrev = () => {
+    if (scrolls === 0) return;
+    setScrolling(true);
+    const elem = scArr.current;
+    if (elem == null) return;
+    elem.scrollTo({
+      left: scroll * (scrolls - 1),
+      behavior: "smooth",
+    });
+    setScrolls(scrolls - 1);
+    setTimeout(() => setScrolling(false), 600);
+  };
 
   useEffect(() => {
-    const scroll = 520; //  change this for responsiveness
-    var dir = false;
     const interval = setInterval(() => {
-      const elem = scArr.current;
-      if (elem == null) return;
-      if (
-        elem.scrollLeft >= scroll*(StoriesCarouselData.length-3) ||
-        elem.scrollLeft === 0
-      ) {
-        dir=!dir;
+      if (scrolling) return;
+      if (scrolls === StoriesCarouselData.length - 1) {
+        setScrolls(-1);
+        slideNext();
       }
-      if (dir) {
-        elem.scrollTo({
-          left: elem.scrollLeft - scroll,
-          behavior: "smooth",
-        });
-      } else {
-        elem.scrollTo({
-          left: elem.scrollLeft + scroll,
-          behavior: "smooth",
-        });
+      else{
+        slideNext();
       }
     }, 2500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [scrolls, scrolling]);
 
   return (
-    <div className="w-full h-[837px] pt-[99px] flex justify-start relative">
-      <div className="h-full w-[200px] absolute z-50 top-0 left-0 bg-gradient-to-r from-[#F3F9FF] to-[#F3F9FF00] "></div>
-      <div className="h-full w-[200px] absolute z-50 top-0 right-0 bg-gradient-to-l from-[#F3F9FF] to-[#F3F9FF00] "></div>
-      <div className="h-full w-full flex overflow-scroll" ref={scArr}>
-        <div className="flex gap-[72px] mx-[20%]">
+    <div className="w-full h-[507px] flex justify-start relative">
+      <Image
+        src="/images/Next-button.svg"
+        alt="Previous"
+        width={50}
+        height={50}
+        className="absolute z-[55] top-[152px] 2xl:left-1/4 xl:left-[15%] left-10 rotate-180 cursor-pointer"
+        onClick={() => {
+          if (!scrolling) slidePrev();
+        }}
+      />
+      <Image
+        src="/images/Next-button.svg"
+        alt="Next"
+        width={50}
+        height={50}
+        className="absolute z-[55] top-[152px] 2xl:right-1/4 xl:right-[15%] right-10 cursor-pointer"
+        onClick={() => {
+          if (!scrolling) slideNext();
+        }}
+      />
+      <div
+        className="h-full w-full flex overflow-x-scroll overflow-y-hidden pointer-events-none items-start snap-x relative"
+        ref={scArr}
+      >
+        <div className="flex gap-[76.8px] mx-[38%]">
           {StoriesCarouselData.map((story, index) => (
             <StoriesCarouselTItem key={index} story={story} />
+          ))}
+        </div>
+      </div>
+      <div className="h-auto w-auto top-[380px] left-1/2 -translate-x-1/2 absolute">
+        <div className="w-40 h-6 bg-[#FDFDFD99] px-[16.8px] py-2 gap-[8.8px] flex rounded-[80px]">
+          {[...Array(StoriesCarouselData.length)].map((_, index) => (
+            <div
+              key={index}
+              style={{
+                background: index <= scrolls || (index===0 && scrolls===-1) ? "#14A4E1" : "#0C356A33",
+              }}
+              className="w-2 h-2 rounded-full cursor-pointer"
+            ></div>
           ))}
         </div>
       </div>

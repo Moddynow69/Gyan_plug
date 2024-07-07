@@ -4,6 +4,7 @@ import ConnectWithUs from "./_sections/ContactUs/ConnectWithUs";
 import Why from "./_sections/WhyChooseGyanplug/Why";
 import Mentors from "./_sections/Mentors/Mentors";
 import MembershipCard from "./_sections/MembershipCard/MembershipCard";
+import Stories from "./_sections/Stories/Stories";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Why/>
       <MembershipCard/>
       <Mentors/>
+      <Stories/>
       <Faqs/>
       <ConnectWithUs/>
     </div>

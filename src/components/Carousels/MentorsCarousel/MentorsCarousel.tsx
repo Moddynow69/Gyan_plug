@@ -8,19 +8,12 @@ export default function MentorsCarousel() {
 
   useEffect(() => {
     const scroll = 520; //  change this for responsiveness
-    var dir = false;
     const interval = setInterval(() => {
       const elem = scArr.current;
       if (elem == null) return;
-      if (
-        elem.scrollLeft >= scroll*(MentorsCarouselData.length-3) ||
-        elem.scrollLeft === 0
-      ) {
-        dir=!dir;
-      }
-      if (dir) {
+      if (elem.scrollLeft >= scroll * (MentorsCarouselData.length - 3)) {
         elem.scrollTo({
-          left: elem.scrollLeft - scroll,
+          left: 0,
           behavior: "smooth",
         });
       } else {
