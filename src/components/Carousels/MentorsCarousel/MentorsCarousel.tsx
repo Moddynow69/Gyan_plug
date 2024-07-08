@@ -11,7 +11,7 @@ export default function MentorsCarousel() {
     const interval = setInterval(() => {
       const elem = scArr.current;
       if (elem == null) return;
-      if (elem.scrollLeft >= scroll * (MentorsCarouselData.length - 3)) {
+      if (elem.scrollLeft >= scroll * (MentorsCarouselData.length - 2.5)) {
         elem.scrollTo({
           left: 0,
           behavior: "smooth",

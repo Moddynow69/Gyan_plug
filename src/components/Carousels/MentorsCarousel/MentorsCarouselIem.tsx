@@ -16,7 +16,7 @@ export default function MentorsCarouselTItem({
   return (
     <div className="w-[448px] h-[545px] bg-gradient-to-b from-[#B3E4FACC] to-[#B3E4FA66] p-[1.6px] rounded-3xl  shadow-[0px_11.52px_24.96px_0px_#04719F1A,0px_45.44px_45.44px_0px_#04719F17,0px_101.76px_60.8px_0px_#04719F0D,0px_181.12px_72.32px_0px_#04719F03,0px_282.24px_79.36px_0px_#04719F00] relative">
       {story.topRated && (
-        <div className="absolute top-[43.2px] left-[43.2px] flex gap-[6.4px] justify-center items-center w-[133.8px] h-[41.6px]">
+        <div className="absolute top-[43.2px] left-[43.2px] flex gap-[6.4px] justify-center items-center w-[133.8px] h-[41.6px] bg-[#FDFDFD] rounded-lg shadow-[0px_2.4px_5.6px_0px_#0000001A,0px_10.4px_10.4px_0px_#00000017,0px_22.4px_13.6px_0px_#0000000D,0px_40px_16px_0px_#00000003,0px_62.4px_17.6px_0px_#00000000] ">
           <Image src={"/icons/star.svg"} width={28} height={28} alt="star" />
           <div className="font-medium text-[16px] leading-[19.2px] text-[#000000]">Top Rated</div>
         </div>
