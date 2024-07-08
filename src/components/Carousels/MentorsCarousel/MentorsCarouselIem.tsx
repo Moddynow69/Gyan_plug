@@ -36,7 +36,7 @@ export default function MentorsCarouselTItem({
             </h1>
             <div className="flex gap-[6.4px]">
               <Image
-                src={"/images/logo.svg"}
+                src={"/icons/location.svg"}
                 alt=""
                 height={22.4}
                 width={22.4}
@@ -60,7 +60,7 @@ export default function MentorsCarouselTItem({
                 Admissions
               </h1>
               <h1 className="w-fit h-[22px] text-[18px] leading-[21.6px] font-bold text-[#0C356A]">
-                {story.experience}
+                {story.admissions}
               </h1>
             </div>
           </div>

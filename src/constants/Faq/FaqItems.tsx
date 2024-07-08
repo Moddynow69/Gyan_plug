@@ -5,28 +5,52 @@ const FaqItems: { heading: string; paragraph: string }[] = [
       'Booking a session is simple! Just go to our "How it Works" section, select a counselor that fits your needs, and schedule a free session at a time convenient for you.',
   },
   {
-    heading: "How do I book a session with a counselor?",
+    heading: "What is Gyaplug.",
     paragraph:
-      'Booking a session is simple! Just go to our "How it Works" section, select a counselor that fits your needs, and schedule a free session at a time convenient for you.',
+      "Gyanplug is a free platform for selected education counselors to connect with students seeking admission guidance.",
   },
   {
-    heading: "What does Gyanplug offer?",
-    paragraph: "Booking a session is simple! Just lorem ipsum",
+    heading: "Who can Apply for the same?",
+    paragraph:
+      "Admission Counselors having experience of pminimum of 3+ years is eligible to apply. Shortlisted Applicants will be invited to the selection process. If selected, your profile will get listed on platform free of cost.",
   },
   {
-    heading: "Is there any cost for using Gyanplug?",
+    heading: "How will it benefit me?",
     paragraph:
-      'Booking a session is simple! Just go to our "How it Works" section, select a counselor that fits your needs, and schedule a free session at a time convenient for you.',
+      "If selected,  your profile will be marketed free of cost on the Gyanplug platform. Students opting for your profile will be directly connected with you for the counseling by zoom meeting/chat/call. You can counsel them for any institution based on student needs.",
   },
   {
-    heading: "Can I change my counselor if I'm not satisfied with my session?",
+    heading: "Do I have to pay for any services?",
     paragraph:
-      'Booking a session is simple! Just go to our "How it Works" section, select a counselor that fits your needs, and schedule a free session at a time convenient for you.',
+      "Currently, this platform will be free of cost for selected counselors. In the future, if there are any charges/fees the same will be informed in advance.",
   },
   {
-    heading: "What kind of support can I expect after getting into college?",
+    heading:
+      "Are there any additional benefits for students opting for my services through Gyanplug?",
     paragraph:
-      'Booking a session is simple! Just go to our "How it Works" section, select a counselor that fits your needs, and schedule a free session at a time convenient for you.',
+      "Yes, Students opting for your counseling services through Gyanplug will be entitled to various additional benefits like Internship & Placement Desk Support, Complimentary Gyanplug Membership for 6 Months offering Special Privileges on  Student Loans, PG Charges,  Local Clubs & Professional Networking Events etc.",
+  },
+  {
+    heading:
+      "Can I divert my students to avail my services through the platform to claim additional benefits?",
+    paragraph:
+      "Yes, you can pass on benefits to your students by routing them through the platform to claim the additional benefits subject to platform policies & guidelines*",
+  },
+  {
+    heading: "Can I customize my profile and services on the platform?",
+    paragraph:
+      "Yes, the counselor can personalize their profile and specify their counseling services & offers etc,  subject to platform policies & guidelines*.",
+  },
+  {
+    heading: "Can I charge students for counseling services?",
+    paragraph:
+      "Yes, you can charge extra from students as per platform policies & guidelines*. However, the first counseling session must be free of cost for each student. Pertinent to add that we discourage this practice if you are getting service charges from the institution for admission.",
+  },
+  {
+    heading:
+      "How does the platform handle disputes between counselors and students?",
+    paragraph:
+      "Our support team mediates disputes between counselors and students. Policies and Guidelines ensure a fair and ethical environment.",
   },
 ];
 export default FaqItems;
