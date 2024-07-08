@@ -5,10 +5,10 @@ import Image from "next/image";
 import { folito } from "@/app/fonts";
 export default function Home() {
   return (
-    <div className="min-h-screen h-auto w-screen flex flex-col relative">
+    <div className="min-h-screen h-auto w-screen flex flex-col relative overflow-hidden">
         <Navbar />
-      <Image src={'/images/circles.svg'} height={1738-795} width={1738-724} alt="" className="absolute right-0 bottom-0 z-0"/>
-      <Image src={'/images/MapChart.svg'} height={1520.16-539.16} width={1280-408} alt="" className="absolute right-0 bottom-0 z-0"/>
+      <Image src={'/images/circles.svg'} height={1079-312} width={1079-105} unoptimized alt="" className="absolute right-0 bottom-0 z-0 max-h-[70%] w-auto"/>
+      <Image src={'/images/Map.gif'} height={1324} width={1120} alt="" unoptimized className="absolute -right-[203px] -bottom-[239px] z-0 max-w-[50%] h-auto"/>
       <div className="h-full w-full flex justify-start pl-[120px] pt-[290px] z-10">
         <div className="w-[654px] h-[588.84px] flex-col justify-start items-start gap-[55px] inline-flex">
          <div className="w-full h-[364.84px] flex-col justify-start items-start gap-[54px] inline-flex">

@@ -5,6 +5,7 @@ import Why from "./_sections/WhyChooseGyanplug/Why";
 import Mentors from "./_sections/Mentors/Mentors";
 import MembershipCard from "./_sections/MembershipCard/MembershipCard";
 import Stories from "./_sections/Stories/Stories";
+import How from "./_sections/HowItWorks/How";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Home />
       <Why/>
       <MembershipCard/>
+      <How/>
       <Mentors/>
       <Stories/>
       <Faqs/>
