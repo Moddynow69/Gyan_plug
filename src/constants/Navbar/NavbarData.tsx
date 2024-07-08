@@ -1,6 +1,6 @@
 const NavbarData = {
   logo: {
-    src:"/images/logo.svg",
+    src:"/images/Logo.svg",
     alt: "Gyan Plug",
     href: "/",
   },

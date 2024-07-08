@@ -1,4 +1,5 @@
 "use client";
+import { folito } from "@/app/fonts";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -24,7 +25,7 @@ export default function FaqItem({ heading, paragraph }: Props) {
         className={`w-[100%] hover:cursor-pointer relative`}
         onClick={toggleVisibility}
       >
-        <div className="flex gap-[1.5rem] font-folito items-center w-[100%]">
+        <div className={`flex gap-[1.5rem] ${folito.className} items-center w-[100%]`}>
           <Image
             height={42}
             width={42}
