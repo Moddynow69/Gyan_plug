@@ -18,8 +18,8 @@ export default function Navbar() {
         />
       </Link>
       <div className="justify-start items-start 2xl:gap-6 xl:gap-4 gap-2 flex">
-        {NavbarItems.map((item) => (
-          <NavbarItem title={item.title} link={item.link} />
+        {NavbarItems.map((item,idx) => (
+          <NavbarItem title={item.title} link={item.link} key={idx}/>
         ))}
       </div>
       <ButtonComponent content="Book Session" type="tertiary" />

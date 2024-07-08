@@ -18,7 +18,7 @@ export default function StoriesCarouselTItem({
       <div className="text-[#0C356ACC] text-[16px] leading-[22.4px] font-normal w-full h-full">
         Navigating the college admission process seemed daunting until I found
         Gyanplug. Their counselors provided personalized guidance that not only
-        helped me get into my dream college but also eased my anxiety. I can't
+        helped me get into my dream college but also eased my anxiety. I can&apos;t
         thank them enough for making this journey smoother and more successful.
       </div>
       <div className="flex gap-[19.2px]">
