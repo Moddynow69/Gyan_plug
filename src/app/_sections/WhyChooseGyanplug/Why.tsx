@@ -6,7 +6,7 @@ import ButtonComponent from "@/components/ButtonComponent/Button";
 
 export default function Why() {
   return (
-    <div className="h-[851px] w-full flex flex-col 2xl:px-[80px] xl:px-5 py-[72px] gap-[72px] bg-[#041020]">
+    <div id="about" className="h-[851px] w-full flex flex-col 2xl:px-[80px] xl:px-5 py-[72px] gap-[72px] bg-[#041020]">
       <div className="h-auto w-full">
         <Heading content="Why Choose Gyanplug?" from="#F5FBFF" to="#58BDFE" />
       </div>

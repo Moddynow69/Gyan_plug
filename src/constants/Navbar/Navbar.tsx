@@ -17,7 +17,7 @@ const NavbarItems: { title: string; link: string }[] = [
   },
   {
     title: "FAQs",
-    link: "/#faqs",
+    link: "#faqs",
   },
   {
     title: "Partners",
