@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen h-auto w-screen flex flex-col relative overflow-hidden">
         <Navbar />
-      <Image src={'/images/circles.svg'} height={1079-312} width={1079-105} unoptimized alt="" className="absolute right-0 bottom-0 z-0 max-h-[70%] w-auto"/>
-      <Image src={'/images/Map.gif'} height={1324} width={1120} alt="" unoptimized className="absolute -right-[203px] -bottom-[239px] z-0 max-w-[50%] h-auto"/>
+      <Image src={'/images/Map.gif'} height={768} width={679} alt="" unoptimized className="absolute right-[131px] bottom-[116px] z-0 max-w-[50%] h-auto"/>
       <div className="h-full w-full flex justify-start pl-[120px] pt-[290px] z-10">
         <div className="w-[654px] h-[588.84px] flex-col justify-start items-start gap-[55px] inline-flex">
          <div className="w-full h-[364.84px] flex-col justify-start items-start gap-[54px] inline-flex">

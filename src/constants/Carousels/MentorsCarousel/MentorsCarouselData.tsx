@@ -1,76 +1,60 @@
 type MentorsCarouselDataType = Array<{
-    topRated: boolean;
-    name: string;
-    location: string;
-    experience: string;
-    admissions: string;
-    image: string;
-  }>;
-  const MentorsCarouselData: MentorsCarouselDataType = [
-    {
-      topRated: true,
-      name: "Story 1",
-      location: "Location 1",
-      experience: "Experience 1",
-      admissions: "Admissions 1",
-      image: "/images/Logo.svg",
-    },
-    {
-      topRated: false,
-      name: "Story 2",
-      location: "Location 2",
-      experience: "Experience 2",
-      admissions: "Admissions 2",
-      image: "/images/Logo.svg",
-    },
-    {
-      topRated: true,
-      name: "Story 3",
-      location: "Location 3",
-      experience: "Experience 3",
-      admissions: "Admissions 3",
-      image: "/images/Logo.svg",
-    },
-    {
-      topRated: false,
-      name: "Story 4",
-      location: "Location 4",
-      experience: "Experience 4",
-      admissions: "Admissions 4",
-      image: "/images/Logo.svg",
-    },
-    {
-      topRated: true,
-      name: "Story 5",
-      location: "Location 5",
-      experience: "Experience 5",
-      admissions: "Admissions 5",
-      image: "/images/Logo.svg",
-    },
-    {
-      topRated: false,
-      name: "Story 6",
-      location: "Location 6",
-      experience: "Experience 6",
-      admissions: "Admissions 6",
-      image: "/images/Logo.svg",
-    },
-    {
-      topRated: true,
-      name: "Story 7",
-      location: "Location 7",
-      experience: "Experience 7",
-      admissions: "Admissions 7",
-      image: "/images/Logo.svg",
-    },
-    {
-      topRated: false,
-      name: "Story 8",
-      location: "Location 8",
-      experience: "Experience 8",
-      admissions: "Admissions 8",
-      image: "/images/Logo.svg",
-    }
-  ];
-  
-  export default MentorsCarouselData;
+  topRated: boolean;
+  name: string;
+  location: string;
+  experience: string;
+  admissions: string;
+  image: string;
+}>;
+const MentorsCarouselData: MentorsCarouselDataType = [
+  {
+    topRated: true,
+    name: "Praveen Agarwal",
+    location: "ApnaMBA.com",
+    experience: "10+ Years",
+    admissions: "1000+",
+    image: "/images/Praveen Agarwal.jpg",
+  },
+  {
+    topRated: true,
+    name: "Snehashree Dash",
+    location: "ApnaMBA.com",
+    experience: "10+ Years",
+    admissions: "1000+",
+    image: "/images/Snehashree Dash.jpg",
+  },
+  {
+    topRated: true,
+    name: "Ayesha Ansari",
+    location: "GTRC CONSULTING",
+    experience: "8 Years",
+    admissions: "200+",
+    image: "/images/Ayesha ansari.jpg",
+  },
+  {
+    topRated: true,
+    name: "Rachna Mishra",
+    location: "Guide Me Education Services",
+    experience: "5 Years",
+    admissions: "200+",
+    image: "/images/Rachna Mishra.jpeg",
+  },
+  {
+    topRated: true,
+    name: "Sayanti Kusari Naskar",
+    location: "Guide me education services",
+    experience: "6 Years",
+    admissions: "150",
+    image: "/images/Sayanti Kusari Naskar.jpeg",
+  },
+  {
+    topRated: true,
+    name: "Sulata Mondal",
+    location: "Guide Me Education",
+    experience: "6 Years",
+    admissions: "240",
+    image: "/images/Sulata Mondal.jpeg",
+  },
+];
+
+export default MentorsCarouselData;

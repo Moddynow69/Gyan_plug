@@ -32,7 +32,7 @@ export default function ButtonComponent({
   } else if (type === "secondary") {
     return (
       <div>
-        <div className={`flex w-[20rem] pt-[20px] pb-[20px] pl-[24px] pr-[24px] justify-center items-center gap-[4px] text-xl rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease shadow-2xl`}>
+        <div className="flex w-[20rem] pt-[20px] pb-[20px] pl-[24px] pr-[24px] justify-center items-center gap-[4px] text-xl rounded-[6px] bg-[#14A4E1] font-folito font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB]">
           {content}
           <Image
             width={28}
@@ -46,7 +46,7 @@ export default function ButtonComponent({
   } else if (type === "tertiary") {
     return (
       <div>
-        <div className={`flex xl:w-[14rem] w-[180px] py-[10px] px-[1.2rem] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease`}>
+        <div className="flex xl:w-[14rem] w-[180px] py-[10px] px-[1.2rem] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] font-folito font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB]">
           {content}
           <Image
             width={28}
