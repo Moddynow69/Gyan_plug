@@ -40,18 +40,6 @@ export const FaqItems: { heading: string; paragraph: string }[] = [
       "Currently, this platform will be free of cost for selected counselors. In the future, if there are any charges/fees the same will be informed in advance.",
   },
   {
-    heading:
-      "Are there any additional benefits for students opting for my services through Gyanplug?",
-    paragraph:
-      "Yes, Students opting for your counseling services through Gyanplug will be entitled to various additional benefits like Internship & Placement Desk Support, Complimentary Gyanplug Membership for 6 Months offering Special Privileges on  Student Loans, PG Charges,  Local Clubs & Professional Networking Events etc.",
-  },
-  {
-    heading:
-      "Can I divert my students to avail my services through the platform to claim additional benefits?",
-    paragraph:
-      "Yes, you can pass on benefits to your students by routing them through the platform to claim the additional benefits subject to platform policies & guidelines*",
-  },
-  {
     heading: "Can I customize my profile and services on the platform?",
     paragraph:
       "Yes, the counselor can personalize their profile and specify their counseling services & offers etc,  subject to platform policies & guidelines*.",
@@ -66,5 +54,17 @@ export const FaqItems: { heading: string; paragraph: string }[] = [
       "How does the platform handle disputes between counselors and students?",
     paragraph:
       "Our support team mediates disputes between counselors and students. Policies and Guidelines ensure a fair and ethical environment.",
+  },
+  {
+    heading:
+      "Can I divert my students to avail my services through the platform to claim additional benefits?",
+    paragraph:
+      "Yes, you can pass on benefits to your students by routing them through the platform to claim the additional benefits subject to platform policies & guidelines*",
+  },
+  {
+    heading:
+      "Are there any additional benefits for students opting for my services through Gyanplug?",
+    paragraph:
+      "Yes, Students opting for your counseling services through Gyanplug will be entitled to various additional benefits like Internship & Placement Desk Support, Complimentary Gyanplug Membership for 6 Months offering Special Privileges on  Student Loans, PG Charges,  Local Clubs & Professional Networking Events etc.",
   },
 ];
