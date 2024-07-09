@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "@/components/Heading/Heading";
-import "./why.css";
 import ButtonComponent from "@/components/ButtonComponent/Button";
 
 export default function Why() {
@@ -38,7 +37,7 @@ export default function Why() {
             height={100}
             width={100}
             alt=""
-            className="h-auto w-auto absolute top-[11px] left-[19px] z-0"
+            className="h-auto w-auto absolute top-[11px] left-[19px] z-10"
           />
           <div className="mb-11 w-[401px] flex flex-col gap-[129px] z-10">
             <div className="w-full flex flex-col gap-4">
