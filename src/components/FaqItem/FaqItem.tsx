@@ -17,16 +17,14 @@ export default function FaqItem({ heading, paragraph }: Props) {
 
   return (
     <div
-      className={`flex flex-col w-[100%] gap-[1.5rem] justify-between duration-700 ease  ${
-        isVisible ? "h-[147.2px]" : "h-[66px]"
+      className={`flex flex-col w-[100%] gap-[1.5rem] justify-between duration-700 ease mb-4 ${
+        isVisible ? "h-[147.2px]" : "h-[4vh]"
       }`}
     >
-      <div
-        className={`w-[100%] hover:cursor-pointer relative`}
-        onClick={toggleVisibility}
-      >
+      <div className={`w-[100%] hover:cursor-pointer relative`}>
         <div
           className={`flex gap-[1.5rem] ${folito.className} items-center w-[100%]`}
+          onClick={toggleVisibility}
         >
           <Image
             height={42}
@@ -38,13 +36,13 @@ export default function FaqItem({ heading, paragraph }: Props) {
               isVisible ? "rotate-90" : "rotate-0"
             } flex-shrink-0`}
           />
-          <div className="flex items-center gap-[2.25rem] text-[#041020] text-[1.5rem] font-[600] leading-[140%]">
+          <div className="flex items-center gap-[2.25rem] text-[#041020] text-[1.7vw] font-[600] leading-[140%]">
             {heading}
           </div>
         </div>
         <p
-          className={`absolute top-[3.5rem] transition-all ease flex justify-start flex-1 font-medium text-white text-1xl pt-[1rem] pb-[1rem] pl-[1.5rem] pr-[1.5rem] leading-[1.75rem] items-start bg-[rgba(20,164,225,1)] rounded-lg overflow-hidden w-[100%] ${
-            isVisible ? "opacity-100 duration-700" : "duration-700 opacity-0 "
+          className={`absolute top-[3.5rem] transition-all ease flex justify-start flex-1 font-medium text-white text-[1.6vw] pt-[1rem] pb-[1rem] pl-[1.5rem] pr-[1.5rem] leading-[1.75rem] items-start bg-[rgba(20,164,225,1)] rounded-lg overflow-hidden w-[100%] ${
+            isVisible ? "opacity-100 duration-700 z-10" : "duration-700 opacity-0 z-0"
           }`}
         >
           {paragraph}

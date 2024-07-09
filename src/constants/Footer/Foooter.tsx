@@ -1,8 +1,8 @@
 export const FooterData = {
   logo: {
     src: "images/Logo_footer.svg",
-    width: 200,
-    height: 98,
+    width: 260,
+    height: 96,
     alt: "N",
   },
   icons: [
