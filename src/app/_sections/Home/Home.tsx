@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import LogoCarousel from "@/components/Carousels/LogoCarousel/LogoCarousel";
 import ButtonComponent from "@/components/ButtonComponent/Button";
 import Image from "next/image";
+import { folito } from "@/app/fonts";
 export default function Home() {
   return (
     <div className="min-h-screen h-auto w-screen flex flex-col relative overflow-hidden">
