@@ -23,7 +23,7 @@ export default function MembershipCard() {
           height={411}
           width={652.04}
           alt=""
-          className="shadow-[11px_6px_27px_0px_#66460033,42px_23px_48px_0px_#6646002B,96px_51px_65px_0px_#6646001A,170px_91px_77px_0px_#66460008,266px_143px_84px_0px_#66460000] absolute right-[189.96px] top-11"
+          className="rounded-3xl shadow-[11px_6px_27px_0px_#66460033,42px_23px_48px_0px_#6646002B,96px_51px_65px_0px_#6646001A,170px_91px_77px_0px_#66460008,266px_143px_84px_0px_#66460000] absolute right-[189.96px] top-11"
         />
         <div className="w-[651.8px] h-[498px] bg-[#F3BF57] rounded-l-[36px]"></div>
       </div>

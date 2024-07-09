@@ -1,8 +1,23 @@
-const FaqItems: { heading: string; paragraph: string }[] = [
+export const FaqItems: { heading: string; paragraph: string }[] = [
   {
-    heading: "What does Gyanplug offer?",
+    heading: "What is Gyanplug?",
     paragraph:
-      'Booking a session is simple! Just go to our "How it Works" section, select a counselor that fits your needs, and schedule a free session at a time convenient for you.',
+      "Gyanplug is a free platform for selected education counselors to connect with students seeking admission guidance.",
+  },
+  {
+    heading: "Who can Apply for the same?",
+    paragraph:
+      "Admission Counselors having experience of a minimum of 3+ years are eligible to apply. Shortlisted applicants will be invited to the selection process. If selected, your profile will get listed on the platform free of cost.",
+  },
+  {
+    heading: "How will it benefit me?",
+    paragraph:
+      "If selected, your profile will be marketed free of cost on the Gyanplug platform. Students opting for your profile will be directly connected with you for counseling via Zoom meeting/chat/call. You can counsel them for any institution based on student needs.",
+  },
+  {
+    heading: "Do I have to pay for any services?",
+    paragraph:
+      "Currently, this platform will be free of cost for selected counselors. In the future, if there are any charges/fees the same will be informed in advance.",
   },
   {
     heading: "What is Gyaplug.",
@@ -53,4 +68,3 @@ const FaqItems: { heading: string; paragraph: string }[] = [
       "Our support team mediates disputes between counselors and students. Policies and Guidelines ensure a fair and ethical environment.",
   },
 ];
-export default FaqItems;
