@@ -13,8 +13,8 @@ export default function ButtonComponent({
 }: Props) {
   if (type === "primary") {
     return (
-      <div className="flex w-[579px] px-[64px] py-[24px] justify-center items-center gap-[8px] rounded-[12px] bg-[#14A4E1] hover:bg-[#0174BE] hover:gap-[24px] hover:cursor-pointer transition-all duration-300 ease">
-        <div className="font-Folito font-bold text-[#FFF9EB] text-3xl leading-[48px] whitespace-nowrap">
+      <div className="flex md:w-[579px] w-[235px] md:h-[99px] h-[69px] px-[64px] py-[24px] justify-center items-center gap-[8px] rounded-[12px] bg-[#14A4E1] hover:bg-[#0174BE] hover:gap-[24px] hover:cursor-pointer transition-all duration-300 ease">
+        <div className="font-Folito font-bold text-[#FFF9EB] md:text-[36px] text-[14px] md:leading-[48px] leading-[16.8px] whitespace-nowrap">
           {content}
         </div>
         {arrow && (
@@ -22,7 +22,7 @@ export default function ButtonComponent({
             width={48}
             height={48}
             alt=">"
-            className="mr-[-2px]"
+            className="w-6 h-6 md:w-auto md:h-auto"
             src="images/chevron-forward.svg"
           />
         )}

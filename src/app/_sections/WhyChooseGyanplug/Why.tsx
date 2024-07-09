@@ -25,7 +25,7 @@ export default function Why() {
           width={483}
           alt=""
         />
-        <div className="hidden  border-2 border-solid border-[#0259A2] bg-[#0174BE33] xl:w-[969px] w-[523px] h-[527px] xl:flex justify-start items-end rounded-3xl overflow-hidden relative pl-9 2xl:gap-10 xl:gap-2 gap-2">
+        <div className="hidden  border-2 border-solid border-[#0259A2] bg-[#0174BE33] xl:w-[969px] w-[523px] h-[527px] xl:flex justify-start items-end overflow-hidden relative pl-9 2xl:gap-10 xl:gap-2 gap-2 rounded-3xl">
           <Image
             src={"/images/topleftshadow.png"}
             height={527}
@@ -60,7 +60,7 @@ export default function Why() {
             className="absolute right-0 bottom-0"
           />
         </div>
-        <Image src={"/images/3_min.svg"} height={527} width={483} alt="" className="xl:hidden h-full w-auto"/>
+        <Image src={"/images/3_min.svg"} height={527} width={483} alt="" className="xl:hidden h-full w-auto rounded-3xl"/>
       </div>
     </div>
   );
