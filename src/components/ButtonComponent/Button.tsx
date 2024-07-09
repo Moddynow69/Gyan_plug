@@ -49,7 +49,7 @@ export default function ButtonComponent({
     return (
       <div>
         <div
-          className={`flex xl:w-[227px] w-[210px] py-[10px] px-[1.2rem] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] font-folito font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${folito.className}`}
+          className={`flex w-[14rem] lg:w-auto py-[6px] lg:py-[10px] px-[1.2rem] justify-center items-center gap-[4px] text-[1rem] xl:text-xl rounded-[6px] bg-[#14A4E1] font-folito font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${folito.className} mb-8 lg:mb-0`}
         >
           {content}
           <Image
