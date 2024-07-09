@@ -5,26 +5,29 @@ import ButtonComponent from "@/components/ButtonComponent/Button";
 
 export default function Why() {
   return (
-    <div id="about" className="h-[851px] w-full flex flex-col 2xl:px-[80px] xl:px-5 py-[72px] gap-[72px] bg-[#041020]">
+    <div
+      id="about"
+      className="h-auto lg:h-[851px] w-full flex flex-col xl:px-5 2xl:px-[80px] py-9 lg:py-[72px] gap-9 lg:gap-[72px] bg-[#041020]"
+    >
       <div className="h-auto w-full">
         <Heading content="Why Choose Gyanplug?" from="#F5FBFF" to="#58BDFE" />
       </div>
-      <div className="h-auto w-full flex 2xl:gap-9 gap-2 justify-center">
+      <div className="h-auto w-full flex flex-col lg:flex-row gap-4 2xl:gap-9 px-9 lg:px-0 justify-center">
         <Image
           src={"/images/1.svg"}
-          className="2xl:block hidden"
+          className="hidden lg:block"
           height={527}
           width={483}
           alt=""
         />
         <Image
-          src={"/images/1.svg"}
-          className="2xl:hidden h-full"
-          height={527}
-          width={483}
+          src={"/images/1_min.svg"}
+          className="lg:hidden w-full h-auto"
+          height={320}
+          width={318}
           alt=""
         />
-        <div className="hidden  border-2 border-solid border-[#0259A2] bg-[#0174BE33] xl:w-[969px] w-[523px] h-[527px] xl:flex justify-start items-end overflow-hidden relative pl-9 2xl:gap-10 xl:gap-2 gap-2 rounded-3xl">
+        <div className="hidden xl:flex border-2 border-solid border-[#0259A2] bg-[#0174BE33] w-[523px] h-[527px] xl:w-[969px] justify-start items-end overflow-hidden relative pl-9  gap-2  xl:gap-2 2xl:gap-10 rounded-3xl">
           <Image
             src={"/images/topleftshadow.png"}
             height={527}
@@ -59,7 +62,13 @@ export default function Why() {
             className="absolute right-0 bottom-0"
           />
         </div>
-        <Image src={"/images/3_min.svg"} height={527} width={483} alt="" className="xl:hidden h-full w-auto rounded-3xl"/>
+        <Image
+          src={"/images/3_min.svg"}
+          height={527}
+          width={483}
+          alt=""
+          className="h-auto w-full lg:h-full lg:w-auto xl:hidden rounded-3xl border-2 border-solid border-[#0259A2]"
+        />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import How from "./_sections/HowItWorks/How";
 
 export default function HomePage() {
   return (
-    <div className="h-auto w-screen flex flex-col bg-[#F5FBFF]">
+    <div className="h-auto w-screen bg-[#F5FBFF]">
       <Home />
       <Why/>
       <MembershipCard/>
