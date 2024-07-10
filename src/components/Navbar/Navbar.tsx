@@ -11,7 +11,7 @@ export default function Navbar() {
   const [menuopen, setMenuopen] = useState(false);
   return (
     <>
-      <div className="z-50 absolute left-1/2 translate-x-[-50%] lg:top-12 w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1488px] lg:h-[98px] h-[70px] 2xl:px-8 xl:px-4 px-5 py-[16.3px] lg:rounded-2xl border-[0.5px] border-[#E8E8E899] backdrop-blur-[44px] justify-between items-center inline-flex bg-[#FFFFFFCC] shadow-[0px_12px_48px_0px_#0067690D]">
+      <div className="z-50 absolute left-1/2 translate-x-[-50%] lg:top-12 w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1488px] lg:h-[98px] h-[70px] pl-2 pr-5 xl:px-4 2xl:px-8 py-[16.3px] lg:rounded-2xl border-[0.5px] border-[#E8E8E899] backdrop-blur-[44px] justify-between items-center inline-flex bg-[#FFFFFFCC] shadow-[0px_12px_48px_0px_#0067690D]">
         <Link href="/" scroll className="min-w-fit min-h-fit">
           <Image
             src={NavbarData.logo.src}

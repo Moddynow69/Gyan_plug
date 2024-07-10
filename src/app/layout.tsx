@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { folito } from "./fonts";
-
-const inter = Inter({ subsets: ["latin"] });
+import { folito, inter } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Gyan Plug",

@@ -8,9 +8,8 @@ export default function StoriesCarousel() {
   const scArr = useRef<HTMLDivElement>(null);
   const [scrolls, setScrolls] = useState<number>(0);
   const [scrolling, setScrolling] = useState<boolean>(false);
-  const scroll: number = window.innerWidth<1024 ? 315 : 832; // Change this for responsiveness
 
-  const slideNext = () => {
+  const slideNext = (scroll: number) => {
     if (scrolls === StoriesCarouselData.length - 1) return;
     setScrolling(true);
     const elem = scArr.current;
@@ -23,7 +22,7 @@ export default function StoriesCarousel() {
     setTimeout(() => setScrolling(false), 600);
   };
 
-  const slidePrev = () => {
+  const slidePrev = (scroll: number) => {
     if (scrolls === 0) return;
     setScrolling(true);
     const elem = scArr.current;
@@ -37,14 +36,14 @@ export default function StoriesCarousel() {
   };
 
   useEffect(() => {
+    const scroll: number = window.innerWidth < 1024 ? 315 : 832; // Change this for responsiveness
     const interval = setInterval(() => {
       if (scrolling) return;
       if (scrolls === StoriesCarouselData.length - 1) {
         setScrolls(-1);
-        slideNext();
-      }
-      else{
-        slideNext();
+        slideNext(scroll);
+      } else {
+        slideNext(scroll);
       }
     }, 2500);
 
@@ -60,7 +59,7 @@ export default function StoriesCarousel() {
         height={50}
         className="hidden md:block absolute z-[55] top-[152px] 2xl:left-1/4 xl:left-[15%] left-10 rotate-180 cursor-pointer"
         onClick={() => {
-          if (!scrolling) slidePrev();
+          if (!scrolling) slidePrev(window.innerWidth < 1024 ? 315 : 832);
         }}
       />
       <Image
@@ -70,7 +69,7 @@ export default function StoriesCarousel() {
         height={50}
         className="hidden md:block absolute z-[55] top-[152px] 2xl:right-1/4 xl:right-[15%] right-10 cursor-pointer"
         onClick={() => {
-          if (!scrolling) slideNext();
+          if (!scrolling) slideNext(window.innerWidth < 1024 ? 315 : 832);
         }}
       />
       <div
@@ -89,7 +88,10 @@ export default function StoriesCarousel() {
             <div
               key={index}
               style={{
-                background: index <= scrolls || (index===0 && scrolls===-1) ? "#14A4E1" : "#0C356A33",
+                background:
+                  index <= scrolls || (index === 0 && scrolls === -1)
+                    ? "#14A4E1"
+                    : "#0C356A33",
               }}
               className="w-2 h-2 rounded-full cursor-pointer"
             ></div>
