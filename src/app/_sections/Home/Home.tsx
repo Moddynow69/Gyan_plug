@@ -12,7 +12,7 @@ export default function Home() {
           <div className="z-10  w-full md:w-[654px] h-full  flex-col justify-start items-start gap-2.5 md:gap-[55px] inline-flex  mt-[94px] lg:mt-[290px] lg:self-end xl:self-auto">
             <div className="w-full h-full flex-col justify-start items-start md:gap-[54px] gap-6 inline-flex">
               <div className="w-full h-full flex-col justify-start items-start md:gap-[19.84px] gap-4 inline-flex">
-                <div className="h-auto w-full font-black font-folito md:text-[40px] text-[24px] md:leading-[60px] leading-8 text-[#0C356A]">
+                <div className={`h-auto w-full font-black ${folito.className} md:text-[40px] text-[24px] md:leading-[60px] leading-8 text-[#0C356A]`}>
                   Shape Your Future by Connecting with{" "}
                   <span className="text-[#14A4E1] whitespace-nowrap">
                     Top Counselors
