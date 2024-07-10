@@ -9,7 +9,7 @@ import How from "./_sections/HowItWorks/How";
 
 export default function HomePage() {
   return (
-    <div className="h-auto w-screen bg-[#F5FBFF]">
+    <div className="h-auto w-screen bg-[#F5FBFF] overflow-visible">
       <Home />
       <Why/>
       <MembershipCard/>

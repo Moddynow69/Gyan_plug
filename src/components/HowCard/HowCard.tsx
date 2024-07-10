@@ -19,10 +19,11 @@ export default function HowCard({
 }) {
   return (
     <div
-      className="overflow-y-hidden h-[435px] md:h-auto lg:h-[350px] xl:h-[430px] w-full flex flex-col lg:flex-row rounded-3xl py-6 lg:py-0 px-6 lg:px-8 xl:px-16 justify-start lg:items-end gap-6 lg:gap-[72px] lg:sticky border-2 border-solid border-[#FDFDFD] shadow-[0px_18px_39px_0px_#04719F1A,0px_71px_71px_0px_#04719F17,0px_159px_95px_0px_#04719F0D,0px_283px_113px_0px_#04719F03,0px_441px_124px_0px_#04719F00]"
+      className="overflow-y-hidden h-[435px] md:h-[600px] lg:h-[350px] xl:h-[430px] w-full flex flex-col lg:flex-row rounded-3xl py-6 lg:py-0 px-6 lg:px-8 xl:px-16 justify-start lg:items-end gap-6 lg:gap-[72px] sticky border-2 border-solid border-[#FDFDFD] shadow-[0px_18px_39px_0px_#04719F1A,0px_71px_71px_0px_#04719F17,0px_159px_95px_0px_#04719F0D,0px_283px_113px_0px_#04719F03,0px_441px_124px_0px_#04719F00]"
       style={{
         top: top,
         backgroundColor: bgColor,
+        position: '-webkit-sticky',
       }}
     >
       <div className="lg:h-[260px] xl:h-[340px] lg:w-[616px] mb-9 flex flex-col justify-between gap-4 lg:gap-0">

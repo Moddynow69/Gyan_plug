@@ -8,7 +8,7 @@ export default function StoriesCarousel() {
   const scArr = useRef<HTMLDivElement>(null);
   const [scrolls, setScrolls] = useState<number>(0);
   const [scrolling, setScrolling] = useState<boolean>(false);
-  const scroll: number = 832; // Change this for responsiveness
+  const scroll: number = window.innerWidth<1024 ? 315 : 832; // Change this for responsiveness
 
   const slideNext = () => {
     if (scrolls === StoriesCarouselData.length - 1) return;
@@ -52,13 +52,13 @@ export default function StoriesCarousel() {
   }, [scrolls, scrolling]);
 
   return (
-    <div className="w-full h-[507px] flex justify-start relative">
+    <div className="w-full h-full md:h-[507px] flex justify-start relative overflow-visible">
       <Image
         src="/images/Next-button.svg"
         alt="Previous"
         width={50}
         height={50}
-        className="absolute z-[55] top-[152px] 2xl:left-1/4 xl:left-[15%] left-10 rotate-180 cursor-pointer"
+        className="hidden md:block absolute z-[55] top-[152px] 2xl:left-1/4 xl:left-[15%] left-10 rotate-180 cursor-pointer"
         onClick={() => {
           if (!scrolling) slidePrev();
         }}
@@ -68,22 +68,22 @@ export default function StoriesCarousel() {
         alt="Next"
         width={50}
         height={50}
-        className="absolute z-[55] top-[152px] 2xl:right-1/4 xl:right-[15%] right-10 cursor-pointer"
+        className="hidden md:block absolute z-[55] top-[152px] 2xl:right-1/4 xl:right-[15%] right-10 cursor-pointer"
         onClick={() => {
           if (!scrolling) slideNext();
         }}
       />
       <div
-        className="h-full w-full flex overflow-x-scroll overflow-y-hidden pointer-events-none items-start snap-x relative"
+        className="h-full w-full flex overflow-x-scroll overflow-visible md:pointer-events-none items-start snap-x snap-mandatory relative"
         ref={scArr}
       >
-        <div className="flex gap-[76.8px] mx-[38%]">
+        <div className="flex gap-[28px] md:gap-[76.8px] mx-[38%] overflow-visible">
           {StoriesCarouselData.map((story, index) => (
             <StoriesCarouselTItem key={index} story={story} />
           ))}
         </div>
       </div>
-      <div className="h-auto w-auto top-[380px] left-1/2 -translate-x-1/2 absolute">
+      <div className="hidden lg:block h-auto w-auto top-[380px] left-1/2 -translate-x-1/2 absolute">
         <div className="w-40 h-6 bg-[#FDFDFD99] px-[16.8px] py-2 gap-[8.8px] flex rounded-[80px]">
           {[...Array(StoriesCarouselData.length)].map((_, index) => (
             <div

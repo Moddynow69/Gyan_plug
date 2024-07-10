@@ -6,15 +6,15 @@ export default function Mentors() {
   return (
     <div
       id="mentors"
-      className="h-auto md:h-[962px] w-full flex flex-col gap-6 md:gap-0 items-center md:items-end lg:pb-[38px] relative"
+      className="h-auto md:h-[962px] w-full flex flex-col md:flex-row gap-6 md:gap-0 items-center md:items-end md:pb-[38px] relative overflow-visible z-[30] "
     >
       <div className="w-auto h-auto md:absolute md:top-[54px] md:left-1/2 md:translate-x-[-50%]">
         <Heading content="Meet Your Mentors" from="#041020" to="#0174BE" />
       </div>
       <MentorsCarousel />
-      <div className="w-auto h-auto absolute bottom-[7px] md:bottom-[98.29px] left-1/2 translate-x-[-50%]">
+      <div className="w-auto h-auto absolute bottom-[79.08px] md:bottom-[98.29px] left-1/2 translate-x-[-50%] overflow-visible">
         <ButtonComponent content="View All" type="secondary" className="hidden md:flex"/>
-        <ButtonComponent content="View All" type="secondary" arrow={false} className="w-[144px] h-[43px] md:hidden"/>
+        <ButtonComponent content="View All" type="secondary" arrow={false} className=" rounded-md md:hidden"/>
       </div>
     </div>
   );

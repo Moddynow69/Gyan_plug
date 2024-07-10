@@ -40,8 +40,10 @@ export default function Navbar() {
           onClick={() => setMenuopen(!menuopen)}
         />
       </div>
+      <div className={menuopen ? "z-[1000] w-screen  h-full fixed bottom-0 right-0 bg-transparent" : "hidden w-0"}>
+        <div className="w-screen h-screen" onClick={()=>setMenuopen(false)}></div>
       <div
-        className={`z-[1000] fixed bottom-0 right-0 h-screen border-[0.5px] border-solid border-[#D9D8D8] rounded-l-xl flex ${
+        className={`fixed bottom-0 right-0 h-full border-[0.5px] border-solid border-[#D9D8D8] rounded-l-xl flex ${
           menuopen ? " w-[258px] duration-[300ms]" : "hidden w-0"
         } flex-col px-6 py-5 gap-5 lg:hidden backdrop-blur-3xl bg-[#FFFFFF99] `}
       >
@@ -65,6 +67,7 @@ export default function Navbar() {
             />
           </div>
         </div>
+      </div>
       </div>
     </>
   );
