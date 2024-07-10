@@ -10,7 +10,7 @@ type Props = {
 export default function Heading({ content, from, to }: Props) {
   return (
     <div
-      className={`text-center ${folito.className} text-[24px] lg:text-[54px] font-black leading-[60px]`}
+      className={`w-full lg:auto text-center ${folito.className} text-[24px] lg:text-[54px] font-black leading-[33.6px] lg:leading-[60px] `}
     >
       <span
         className=" bg-clip-text text-transparent whitespace-nowrap"
