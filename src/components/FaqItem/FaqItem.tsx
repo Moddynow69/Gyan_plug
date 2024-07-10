@@ -17,7 +17,7 @@ export default function FaqItem({ heading, paragraph }: Props) {
 
   return (
     <div
-      className={`flex flex-col w-[100%] gap-[1.5rem] justify-between duration-700 ease mb-4 ${
+      className={`flex flex-col w-[100%] lg:pt-10 gap-[1.5rem] justify-between duration-700 ease mb-4 ${
         isVisible ? "h-[4rem] lg:h-[147.2px]" : "h-[2rem] lg:h-[4vh]"
       }`}
     >
@@ -36,7 +36,7 @@ export default function FaqItem({ heading, paragraph }: Props) {
               isVisible ? "rotate-90" : "rotate-0"
             } flex-shrink-0`}
           />
-          <div className="flex items-center lg:gap-[2.25rem] text-[#041020] text-[0.7rem] lg:text-[1.2rem] font-[600] leading-[130%] lg:leading-[140%]">
+          <div className="flex items-center lg:gap-[2.25rem] text-[#041020] text-[0.7rem] lg:text-[1.2rem] xl:text-[1.4rem] font-[600] leading-[130%] lg:leading-[140%]">
             {heading}
           </div>
         </div>

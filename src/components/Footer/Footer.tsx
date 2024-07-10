@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div>
       <div className="upper flex flex-col lg:flex-row justify-between px-4 lg:px-[3rem] xl:px-[5rem] py-8 lg:py-14 bg-[#0C356A] rounded-t-[0.8rem] lg:rounded-t-[2.6rem]">
-        <div className="gyanplug flex flex-col gap-[0.9rem] lg:gap-[1.6rem]">
+        <div className="gyanplug flex flex-col gap-[0.9rem] lg:gap-[1.6rem] mb-5 lg:mb-0">
           <div className="flex justify-start items-center">
             <Image
               src={FooterData.logo.src}
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
         <div
-          className={`links ${folito.className} flex flex-row gap-[1.7rem] lg:gap-[1rem] xl:gap-[3.3rem]`}
+          className={`links ${folito.className} flex flex-row gap-[1.7rem] justify-between lg:gap-[1rem] xl:gap-[3.3rem]`}
         >
           <div className="row flex flex-col gap-[0.4rem] lg:gap-[0.4rem] xl:gap-[0.75rem]">
             <div className="heading">
@@ -68,7 +68,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="logos mt-2 lg:mt-4 xl:mt-8">
+        <div className="logos mt-6 lg:mt-4 xl:mt-8">
           <div className="logoscontainer flex flex-row gap-4">
             {FooterData.icons.map((image, index) => (
               <Image

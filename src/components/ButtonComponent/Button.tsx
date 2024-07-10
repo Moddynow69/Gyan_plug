@@ -17,9 +17,9 @@ export default function ButtonComponent({
   if (type === "primary") {
     return (
       <div
-        className={` ${className} ${folito.className} flex md:w-[579px] w-[235px] md:h-[99px] h-[69px] px-[64px] py-[24px] justify-center items-center gap-[8px] rounded-[12px] bg-[#14A4E1] hover:bg-[#0174BE] hover:gap-[24px] hover:cursor-pointer transition-all duration-300 ease`}
+        className={` ${className} ${folito.className} flex py-2 px-4 rounded-[8px] w-auto lg:w-[526px] lg:px-[64px] lg:py-[16px] justify-center items-center gap-[8px] lg:rounded-[12px] bg-[#14A4E1] hover:bg-[#0174BE] hover:gap-[24px] hover:cursor-pointer transition-all duration-300 ease`}
       >
-        <div className="font-Folito font-bold text-[#FFF9EB] md:text-[36px] text-[14px] md:leading-[48px] leading-[16.8px] whitespace-nowrap">
+        <div className="font-Folito font-bold text-[#FFF9EB] text-[14px] lg:text-[25px] xl:text-[34px] md:leading-[48px] leading-[16.8px] whitespace-nowrap">
           {content}
         </div>
         {arrow && (
@@ -55,7 +55,7 @@ export default function ButtonComponent({
     return (
       <div>
         <div
-          className={` ${className} flex xl:w-[227px] w-[210px] h-[52px] py-[10px] px-[1.2rem] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] font-folito font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${folito.className}`}
+          className={`py-[8px] ${className} flex w-[100%] xl:w-[250px] lg:py-[10px] px-[1.2rem] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] font-folito font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${folito.className}`}
         >
           {content}
           {arrow && (
