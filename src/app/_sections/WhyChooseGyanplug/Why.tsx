@@ -14,14 +14,14 @@ export default function Why() {
       </div>
       <div className="h-auto w-full flex flex-col lg:flex-row gap-4 2xl:gap-9 px-9 lg:px-0 justify-center">
         <Image
-          src={"/images/1.svg"}
+          src={"/images/1.png"}
           className="hidden lg:block"
           height={527}
           width={483}
           alt=""
         />
         <Image
-          src={"/images/1_min.svg"}
+          src={"/images/1_min.png"}
           className="lg:hidden w-full h-auto"
           height={320}
           width={318}
@@ -60,10 +60,13 @@ export default function Why() {
             width={465}
             alt=""
             className="absolute right-0 bottom-0"
+            style={{
+              mixBlendMode: "luminosity",
+            }}
           />
         </div>
         <Image
-          src={"/images/3_min.svg"}
+          src={"/images/3_min.png"}
           height={527}
           width={483}
           alt=""

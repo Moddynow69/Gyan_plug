@@ -20,11 +20,11 @@ export default function MembershipCard() {
       <div className="relative h-auto md:h-[382.01px] xl:h-[498px] w-full lg:w-auto flex justify-center lg:justify-start items-end lg:items-start">
         <div className=" w-[349px] md:w-[500px] lg:w-[500px] xl:w-[651.8px] h-[169px] md:h-[256.4px] lg:h-[382.01px] xl:h-[498px] bg-[#F3BF57] rounded-[36px] lg:rounded-none lg:rounded-l-[36px] relative lg:static flex justify-center">
           <Image
-            src={"/images/Card.png"}
+            src={"/images/Father.png"}
             height={411}
             width={652.04}
             alt=""
-            className="rounded-[11.26px] shadow-[0px_3px_7px_0px_#66460033,0px_13px_13px_0px_#6646002B,0px_29px_18px_0px_#6646001A,0px_52px_21px_0px_#66460008,0px_82px_23px_0px_#66460000] lg:shadow-[11px_6px_27px_0px_#66460033,42px_23px_48px_0px_#6646002B,96px_51px_65px_0px_#6646001A,170px_91px_77px_0px_#66460008,266px_143px_84px_0px_#66460000] absolute  lg:right-10 xl:right-14 2xl:right-[189.96px] lg:translate-x-0 lg:top-1/2 -translate-y-[62px] lg:-translate-y-1/2 z-10 w-[310px] md:w-[90%] lg:w-auto mx-5 lg:mx-0"
+            className=" bg-[#0D0D0DB2] rounded-[23.69px] shadow-[0px_3px_7px_0px_#66460033,0px_13px_13px_0px_#6646002B,0px_29px_18px_0px_#6646001A,0px_52px_21px_0px_#66460008,0px_82px_23px_0px_#66460000] lg:shadow-[11px_6px_27px_0px_#66460033,42px_23px_48px_0px_#6646002B,96px_51px_65px_0px_#6646001A,170px_91px_77px_0px_#66460008,266px_143px_84px_0px_#66460000] absolute  lg:right-10 xl:right-14 2xl:right-[189.96px] lg:translate-x-0 lg:top-1/2 -translate-y-[62px] lg:-translate-y-1/2 z-10 w-[310px] md:w-[90%] lg:w-auto mx-5 lg:mx-0"
           />
         </div>
       </div>
