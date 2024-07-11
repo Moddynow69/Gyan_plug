@@ -8,9 +8,9 @@ export default function Home() {
     <>
       <Navbar />
       <div className="min-h-screen h-auto w-screen flex flex-col items-center relative overflow-hidden">
-        <div className="h-full w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1488px] flex flex-col lg:flex-row items-center lg:items-start gap-2.5 px-5 lg:px-0 z-10 justify-between">
-          <div className="z-10  w-full md:w-[654px] h-full  flex-col justify-start items-start gap-2.5 md:gap-[55px] inline-flex  mt-[94px] lg:mt-[290px] lg:self-end xl:self-auto">
-            <div className="w-full h-full flex-col justify-start items-start md:gap-[54px] gap-6 inline-flex">
+        <div className="h-full w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1488px] flex flex-col lg:flex-row items-center lg:items-start gap-2.5 lg:gap-20 px-5 lg:px-0 z-10 justify-between">
+          <div className="z-10 w-full lg:w-[400px] xl:w-[654px] h-full flex-col justify-start items-start gap-2.5 md:gap-[55px] lg:gap-[24px] xl:gap-[55px] inline-flex  mt-[94px] lg:mt-[180px] xl:mt-[290px] lg:self-end xl:self-auto">
+            <div className="w-full h-full flex-col justify-start items-start gap-6 md:gap-[54px] lg:gap-6 xl:gap-[54px] inline-flex">
               <div className="w-full h-full flex-col justify-start items-start md:gap-[19.84px] gap-4 inline-flex">
                 <div className={`h-auto w-full font-black ${folito.className} md:text-[40px] text-[24px] md:leading-[60px] leading-8 text-[#0C356A]`}>
                   Shape Your Future by Connecting with{" "}
@@ -42,7 +42,7 @@ export default function Home() {
             width={679}
             alt=""
             unoptimized
-            className="lg:mt-[233px] lg:max-w-[50%] lg:w-2/5 lg:self-end h-auto xl:w-auto"
+            className="rounded-[36px] lg:mt-[233px] lg:max-w-[52%] xl:max-w-[45%] lg:self-end h-auto xl:w-auto bg-[#ECF8FE]"
           />
         </div>
       </div>

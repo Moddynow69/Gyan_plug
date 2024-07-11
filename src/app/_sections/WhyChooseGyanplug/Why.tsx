@@ -7,15 +7,15 @@ export default function Why() {
   return (
     <div
       id="about"
-      className="h-auto lg:h-[851px] w-full flex flex-col xl:px-5 2xl:px-[80px] py-9 lg:py-[72px] gap-9 lg:gap-[72px] bg-[#041020]"
+      className="h-auto lg:h-[851px] w-full flex flex-col lg:px-20 2xl:px-[120px] py-9 lg:py-[72px] gap-9 lg:gap-[72px] bg-[#041020]"
     >
       <div className="h-auto w-full">
         <Heading content="Why Choose Gyanplug?" from="#F5FBFF" to="#58BDFE" />
       </div>
-      <div className="h-auto w-full flex flex-col lg:flex-row gap-4 2xl:gap-9 px-9 lg:px-0 justify-center">
+      <div className="lg:h-[527px] w-full flex flex-col lg:flex-row gap-4 lg:gap-9 px-9 lg:px-0 justify-center">
         <Image
           src={"/images/1.png"}
-          className="hidden lg:block"
+          className="hidden lg:block h-full w-auto"
           height={527}
           width={483}
           alt=""
@@ -59,7 +59,7 @@ export default function Why() {
             height={496}
             width={465}
             alt=""
-            className="absolute right-0 bottom-0"
+            className="absolute right-0 bottom-0 max-w-[50%] 2xl:max-w-[50%]"
             style={{
               mixBlendMode: "luminosity",
             }}
@@ -70,7 +70,7 @@ export default function Why() {
           height={527}
           width={483}
           alt=""
-          className="h-auto w-full lg:h-full lg:w-auto xl:hidden rounded-3xl border-2 border-solid border-[#0259A2]"
+          className="h-full w-auto lg:h-full lg:w-auto xl:hidden rounded-3xl border-2 border-solid border-[#0259A2]"
         />
       </div>
     </div>

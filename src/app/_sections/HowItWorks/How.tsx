@@ -40,7 +40,7 @@ export default function How() {
       id="how-it-works"
       className="h-auto lg:h-[1074px] w-screen flex flex-col relative overflow-hidden pt-20 gap-[72px]"
     >
-      <Heading content="How It Works" from="#041020" to="#0174BE" />
+      <Heading content="How it Works?" from="#041020" to="#0174BE" />
       <div
         className="h-[767px] md:h-[1000px] lg:h-[767px] w-full  2xl:px-[120px] xl:px-20 px-10 flex items-start relative overflow-y-scroll pb-4"
         ref={childRef}
