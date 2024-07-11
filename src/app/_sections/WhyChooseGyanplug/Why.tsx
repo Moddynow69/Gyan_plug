@@ -36,7 +36,7 @@ export default function Why() {
             className="h-auto w-auto absolute top-0 left-0 z-0"
           />
           <Image
-            src={"/images/icon.svg"}
+            src={"/images/Icon.svg"}
             height={100}
             width={100}
             alt=""
