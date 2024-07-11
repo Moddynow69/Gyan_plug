@@ -18,7 +18,7 @@ export default function FaqItem({ heading, paragraph }: Props) {
   return (
     <div
       className={`flex flex-col w-[100%] lg:pt-10 gap-[1.5rem] justify-between duration-700 ease mb-4 ${
-        isVisible ? "h-[4rem] lg:h-[147.2px]" : "h-[2rem] lg:h-[4vh]"
+        isVisible ? "h-fit lg:h-[147.2px]" : "h-[2rem] lg:h-[3rem]"
       }`}
     >
       <div className={`w-[100%] hover:cursor-pointer relative`}>
@@ -41,8 +41,13 @@ export default function FaqItem({ heading, paragraph }: Props) {
           </div>
         </div>
         <p
-          className={`absolute top-[2rem] lg:top-[3.5rem] transition-all ease flex justify-start flex-1 font-medium text-white text-[0.7rem] lg:text-[1.1rem] py-[0.6rem] lg:py-[1rem] px-[0.6rem] lg:px-[1.5rem] leading-[130%] lg:leading-[1.75rem] items-start bg-[rgba(20,164,225,1)] rounded-md lg:rounded-lg overflow-hidden w-[100%] ${
-            isVisible ? "opacity-100 duration-700 z-10" : "duration-700 opacity-0 z-0"
+          className={`absolute top-[2rem] lg:top-[3.5rem] transition-all ease 
+          flex justify-start flex-1 font-medium text-white text-[0.7rem] lg:text-[1.1rem] py-[0.6rem] lg:py-[1rem] px-[0.6rem] 
+          lg:px-[1.5rem] leading-[130%] lg:leading-[1.75rem] items-start bg-[rgba(20,164,225,1)] rounded-md lg:rounded-lg overflow-hidden 
+          w-[100%] ${
+            isVisible
+              ? "opacity-100 duration-700 z-10 h-fit"
+              : "duration-700 opacity-0 z-0 h-0"
           }`}
         >
           {paragraph}
