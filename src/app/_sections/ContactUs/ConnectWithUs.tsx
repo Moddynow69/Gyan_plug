@@ -29,7 +29,7 @@ export default function ConnectWithUs() {
             width={165}
             height={165}
             alt="*"
-            className="w-[38px] lg:w-[165px] left-[3.4rem] -top-[5.18rem] relative lg:-top-4 lg:-left-6 xl:-top-4 xl:left-[1rem] 2xl:-top-7 2xl:left-[6rem]"
+            className="w-[38px] lg:w-[165px] left-[5.4rem] -top-[5.8rem] relative lg:-top-4 lg:-left-6 xl:-top-4 xl:left-[1rem] 2xl:-top-7 2xl:left-[6rem]"
           />
           <Image
             src="/images/person4.png"
@@ -68,14 +68,14 @@ export default function ConnectWithUs() {
             width={139}
             height={139}
             alt="*"
-            className="relative w-[40px] -right-[14.5rem] top-7 lg:w-[139px] lg:-top-2 lg:right-8 xl:-top-4 xl:right-[10rem] 2xl:right-[17rem] 2xl:-top-4"
+            className="relative w-[40px] -right-[18rem] top-7 lg:w-[139px] lg:-top-2 lg:right-8 xl:-top-4 xl:right-[10rem] 2xl:right-[17rem] 2xl:-top-4"
           />
           <Image
             src="/images/person7.png"
             width={113}
             height={113}
             alt="*"
-            className="relative w-[39px] -right-48 -top-[4.5rem] lg:w-[113px] lg:-top-4 lg:-right-[2rem] 2xl:right-[8rem] 2xl:-top-4"
+            className="relative w-[39px] -right-52 -top-[4.9rem] lg:w-[113px] lg:-top-4 lg:-right-[2rem] 2xl:right-[8rem] 2xl:-top-4"
           />
           <Image
             src="/images/person8.png"
