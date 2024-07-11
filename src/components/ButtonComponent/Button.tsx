@@ -17,7 +17,7 @@ export default function ButtonComponent({
   if (type === "primary") {
     return (
       <div
-        className={` ${folito.className} flex py-2 px-4 rounded-[8px] w-auto lg:w-[526px] lg:px-[64px] lg:py-[16px] justify-center items-center gap-[8px] lg:rounded-[12px] bg-[#14A4E1] hover:bg-[#0174BE] hover:gap-[24px] hover:cursor-pointer transition-all duration-300 ease  ${className}`}
+        className={` ${folito.className} flex py-2 px-4 rounded-[8px] w-auto xl:w-[526px] xl:px-[64px] xl:py-[16px] justify-center items-center gap-[8px] lg:rounded-[12px] bg-[#14A4E1] hover:bg-[#0174BE] hover:gap-[24px] hover:cursor-pointer transition-all duration-300 ease  ${className}`}
       >
         <div className={`${folito.className} font-bold text-[#FFF9EB] text-[14px] lg:text-[25px] xl:text-[34px] md:leading-[48px] leading-[16.8px] whitespace-nowrap`}>
           {content}
