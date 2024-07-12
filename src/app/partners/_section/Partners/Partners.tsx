@@ -9,14 +9,14 @@ export default function Partners() {
       <div className="h-auto w-screen flex flex-col items-center justify-end pt-[112px] lg:pt-[218px]">
         <div className="w-[100%] max-w-[930px] flex flex-col gap-9 items-center">
           <div className="w-[100%] max-w-[328px] lg:max-w-[100%] flex flex-col items-center gap-5 lg:gap-[24px]">
-            <div className="w-[100%] flex flex-col items-center gap-[0.5rem] lg:gap-[19.84px]">
+            <div className="w-[100%] flex flex-col items-center gap-[8px] lg:gap-[19.84px]">
               <div
                 className={`text-[#0C356A] font-black text-[24px] lg:text-[40px] leading-[28.8px] lg:leading-[60px] text-center ${folito.className}`}
               >
                 Join as a Counsellor
               </div>
               <div
-                className={`text-[#0C356A99] text-center font-medium text-[14px] lg:text-[1.3rem] xl:text-[1.5rem] tracking-tight leading-[140%] ${dmSans.className} px-3 lg:px-28 xl:px-60`}
+                className={`text-[#0C356A99] text-center font-medium text-[14px] lg:text-[20.8px] xl:text-[24px] tracking-tight leading-relaxed ${dmSans.className} px-3 lg:px-28 xl:px-60`}
               >
                 Gyanplug is a free platform for education counsellors to connect
                 with students looking for admission guidance.

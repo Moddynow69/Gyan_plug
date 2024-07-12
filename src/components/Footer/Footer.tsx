@@ -6,19 +6,19 @@ import { FooterData } from "@/constants/Footer/Foooter";
 export default function Footer() {
   return (
     <div>
-      <div className="upper flex flex-col md:flex-row justify-between px-4 lg:px-[3rem] xl:px-[5rem] py-8 lg:py-14 bg-[#0C356A] rounded-t-[0.8rem] lg:rounded-t-[2.6rem]">
-        <div className="gyanplug flex flex-col gap-[0.9rem] lg:gap-[1.6rem] mb-5 lg:mb-0">
+      <div className="upper flex flex-col md:flex-row justify-between px-4 lg:px-[48px] xl:px-[80px] py-8 lg:py-14 bg-[#0C356A] rounded-t-[12.8px] lg:rounded-t-[41px]">
+        <div className="gyanplug flex flex-col gap-[14.4px] lg:gap-[25.6px] mb-5 lg:mb-0">
           <div className="flex justify-start items-center">
             <Image
               src={FooterData.logo.src}
               width={FooterData.logo.width}
               height={FooterData.logo.height}
               alt={FooterData.logo.alt}
-              className="w-[8rem] lg:w-auto"
+              className="w-[128px] lg:w-auto"
             />
           </div>
           <div
-            className={`tracking-tight text-[#FDFDFD] text-[0.7rem] lg:text-[1.1rem] font-[400] lg:leading-[2rem] break-words ${folito.className}`}
+            className={`tracking-tight text-[#FDFDFD] text-[11.2px] lg:text-[17.6px] font-[400] lg:leading-[32px] break-words ${folito.className}`}
           >
             Wisdom Rd, Sco 142 Nirman Point
             <br />
@@ -29,40 +29,40 @@ export default function Footer() {
           </div>
         </div>
         <div
-          className={`links ${folito.className} flex flex-row gap-[1.7rem] justify-between md:justify-start xl:justify-between lg:gap-[1rem] xl:gap-[3.3rem]`}
+          className={`links ${folito.className} flex flex-row gap-[27.2px] justify-between md:justify-start xl:justify-between lg:gap-[16px] xl:gap-[52.8px]`}
         >
-          <div className="row flex flex-col gap-[0.4rem] lg:gap-[0.4rem] xl:gap-[0.75rem]">
+          <div className="row flex flex-col gap-[6.4px] lg:gap-[6.4px] xl:gap-[12px]">
             <div className="heading">
-              <span className="text-[#FDFDFD] text-[1.2rem] lg:text-[1.45rem] font-[700] leading-[37.16px] break-words">
+              <span className="text-[#FDFDFD] text-[19.2px] lg:text-[23.2px] font-[700] leading-[37.16px] break-words">
                 Company
               </span>
             </div>
-            <div className="subheading flex flex-col gap-[0.25rem] lg:gap-[0.3rem] xl:gap-[0.75rem]">
-              <span className="text-[#FDFDFD] text-[0.8rem] lg:text-[1.1rem] xl:text-[1.3rem] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
+            <div className="subheading flex flex-col gap-[4px] lg:gap-[4.8px] xl:gap-[12px]">
+              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
                 Book Session
               </span>
-              <span className="text-[#FDFDFD] text-[0.8rem] lg:text-[1.1rem] xl:text-[1.3rem] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
                 Why Gyanplug?
               </span>
-              <span className="text-[#FDFDFD] text-[0.8rem] lg:text-[1.1rem] xl:text-[1.3rem] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
                 How it works?
               </span>
-              <span className="text-[#FDFDFD] text-[0.8rem] lg:text-[1.1rem] xl:text-[1.3rem] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
                 Testimonials
               </span>
             </div>
           </div>
-          <div className="row flex flex-col gap-[0.4rem] lg:gap-[0.4rem] xl:gap-[0.75rem]">
+          <div className="row flex flex-col gap-[6.4px] lg:gap-[6.4px] xl:gap-[12px]">
             <div className="heading">
-              <span className="text-[#FDFDFD] text-[1.2rem] lg:text-[1.45rem] font-[700] leading-[37.16px] break-words">
+              <span className="text-[#FDFDFD] text-[19.2px] lg:text-[23.2px] font-[700] leading-[37.16px] break-words">
                 Legal
               </span>
             </div>
-            <div className="subheading flex flex-col gap-[0.25rem] lg:gap-[0.75rem]">
-              <span className="text-[#FDFDFD] text-[0.8rem] lg:text-[1.1rem] xl:text-[1.3rem] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
+            <div className="subheading flex flex-col gap-[4px] lg:gap-[12px]">
+              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
                 Terms & Conditions
               </span>
-              <span className="text-[#FDFDFD] text-[0.8rem] lg:text-[1.1rem] xl:text-[1.3rem] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
+              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
                 Privacy policy
               </span>
             </div>
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
       </div>
       <div
-        className={`lower ${folito.className} font-medium text-[0.7rem] lg:text-[1.45rem] break-words text-[#ECF8FE] text-center py-[1rem] lg:py-[1.5rem] bg-[#001838]`}
+        className={`lower ${folito.className} font-medium text-[11.2px] lg:text-[23.2px] break-words text-[#ECF8FE] text-center py-[16px] lg:py-[24px] bg-[#001838]`}
       >
         &#169; 2024 Gyaanplug. All rights reserved.
       </div>
