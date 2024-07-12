@@ -17,13 +17,13 @@ export default function FaqItem({ heading, paragraph }: Props) {
 
   return (
     <div
-      className={`flex flex-col w-[100%] lg:pt-10 gap-[1.5rem] justify-between duration-700 ease mb-4 ${
-        isVisible ? "h-fit lg:h-[147.2px]" : "h-[2rem] lg:h-[3rem]"
+      className={`flex flex-col w-[100%] transition-all ${
+        isVisible ? "h-fit duration-700 ease gap-3 lg:gap-6" : "h-fit min-h-[44px] lg:min-h-[67px] duration-700 ease gap-[5px] lg:gap-[11px]"
       }`}
     >
-      <div className={`w-[100%] hover:cursor-pointer relative`}>
+      <div className={`w-[100%] h-fit min-h-[28px] lg:min-h-[42px] hover:cursor-pointer`}>
         <div
-          className={`flex gap-[1rem] lg:gap-[1.5rem] ${folito.className} items-center w-[100%]`}
+          className={`flex gap-9 ${folito.className} items-center w-[100%] h-fit`}
           onClick={toggleVisibility}
         >
           <Image
@@ -36,24 +36,21 @@ export default function FaqItem({ heading, paragraph }: Props) {
               isVisible ? "rotate-90" : "rotate-0"
             } flex-shrink-0`}
           />
-          <div className="flex items-center lg:gap-[2.25rem] text-[#041020] text-[0.7rem] lg:text-[1.2rem] xl:text-[1.4rem] font-[600] leading-[130%] lg:leading-[140%]">
+          <div className="text-[#041020] text-[14px] lg:text-[24px] font-[600] leading-[18.2px] lg:leading-[33.6px]">
             {heading}
           </div>
         </div>
-        <p
-          className={`absolute top-[2rem] lg:top-[3.5rem] transition-all ease 
-          flex justify-start flex-1 font-medium text-white text-[0.7rem] lg:text-[1.1rem] py-[0.6rem] lg:py-[1rem] px-[0.6rem] 
-          lg:px-[1.5rem] leading-[130%] lg:leading-[1.75rem] items-start bg-[rgba(20,164,225,1)] rounded-md lg:rounded-lg overflow-hidden 
-          w-[100%] ${
-            isVisible
-              ? "opacity-100 duration-700 z-10 h-fit"
-              : "duration-700 opacity-0 z-0 h-0"
-          }`}
-        >
-          {paragraph}
-        </p>
       </div>
-      <hr className="border-[rgba(20,164,225,0.20)] lg:border-[1px] w-[100%]" />
+      <div
+        className={` font-medium text-white text-[12px] lg:text-[24px] leading-[16.8px] lg:leading-[33.6px] items-start bg-[rgba(20,164,225,1)] rounded-md lg:rounded-lg w-[100%]  ${
+          isVisible
+            ? "duration-700 ease opacity-100 h-fit py-[0.6rem] lg:py-[1rem] px-[0.6rem] lg:px-[1.5rem]"
+            : "duration-700 ease opacity-0 h-0 px-0 py-0 -z-10"
+        }`}
+      >
+        {paragraph}
+      </div>
+      <div className="bg-[rgba(20,164,225,0.20)] h-[2px] w-[100%] mt-1 lg:mt-0" />
     </div>
   );
 }

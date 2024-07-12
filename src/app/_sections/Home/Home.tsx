@@ -42,7 +42,7 @@ export default function Home() {
             width={679}
             alt=""
             unoptimized
-            className="rounded-[36px] lg:mt-[233px] lg:max-w-[52%] xl:max-w-[45%] lg:self-end h-auto xl:w-auto bg-[#ECF8FE]"
+            className="rounded-[36px] lg:mt-[233px] lg:max-w-[52%] xl:max-w-[45%] xl:self-end h-auto xl:w-auto bg-[#ECF8FE] mb-3"
           />
         </div>
       </div>

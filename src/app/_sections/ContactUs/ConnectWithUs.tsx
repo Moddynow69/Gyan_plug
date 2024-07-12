@@ -9,7 +9,7 @@ export default function ConnectWithUs() {
       <div
         className={`flex flex-row justify-center lg:justify-between px-1 md:px-10 ${folito.className} mb-[10px] lg:mb-[20px]`}
       >
-        <div className="w-[320px] lg:w-auto absolute lg:static">
+        <div className="hidden lg:block w-[320px] lg:w-auto absolute lg:static">
           <Image
             src="/images/person1.png"
             width={107}
@@ -55,7 +55,7 @@ export default function ConnectWithUs() {
             <NotifyMe />
           </div>
         </div>
-        <div className="w-[320px]  lg:w-auto absolute lg:static overflow-x-clip sm:overflow-visible">
+        <div className="hidden lg:block w-[320px]  lg:w-auto absolute lg:static overflow-x-clip sm:overflow-visible">
           <Image
             src="/images/person5.png"
             width={86}
