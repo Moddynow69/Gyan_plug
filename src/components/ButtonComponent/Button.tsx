@@ -55,7 +55,7 @@ export default function ButtonComponent({
     return (
       <div>
         <div
-          className={`py-[8px] flex w-[100%] xl:w-[230px] xl:py-[10px] px-[1.2rem] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${className} `}
+          className={`py-[8px] flex w-[100%] xl:w-[230px] xl:py-[10px] px-[19.2px] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${className} `}
         >
           {content}
           {arrow && (
