@@ -15,7 +15,7 @@ export default function How() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.intersectionRatio >= 0.8) {
+          if (entry.intersectionRatio >= 0.5) {
             child.style.overflowY = "auto";
           } else {
             child.style.overflowY = "hidden";
@@ -23,7 +23,7 @@ export default function How() {
         });
       },
       {
-        threshold: [0.8],
+        threshold: [0.5],
       }
     );
 
@@ -38,7 +38,7 @@ export default function How() {
   return (
     <div
       id="how-it-works"
-      className="h-auto lg:h-[1074px] w-screen flex flex-col relative overflow-hidden pt-20 gap-[72px]"
+      className="h-auto lg:h-[1074px] w-screen flex flex-col relative overflow-hidden pt-20 gap-[72px] snap-start snap-always"
     >
       <Heading content="How it Works?" from="#041020" to="#0174BE" />
       <div

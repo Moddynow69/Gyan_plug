@@ -7,7 +7,7 @@ export default function Why() {
   return (
     <div
       id="about"
-      className="h-auto lg:h-[851px] w-full flex flex-col lg:px-20 2xl:px-[120px] py-9 lg:py-[72px] gap-9 lg:gap-[72px] bg-[#041020]"
+      className="h-auto lg:h-[851px] w-full flex flex-col lg:px-20 2xl:px-[120px] py-9 lg:py-[72px] gap-9 lg:gap-[72px] bg-[#041020] snap-start snap-always"
     >
       <div className="h-auto w-full">
         <Heading content="Why Choose Gyanplug?" from="#F5FBFF" to="#58BDFE" />

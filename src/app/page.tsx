@@ -9,15 +9,17 @@ import How from "./_sections/HowItWorks/How";
 
 export default function HomePage() {
   return (
-    <div className="h-auto w-screen bg-[#F5FBFF] overflow-visible">
-      <Home />
-      <Why/>
-      <MembershipCard/>
-      <How/>
-      <Mentors/>
-      <Stories/>
-      <Faqs/>
-      <ConnectWithUs/>
+    <div className="h-screen w-screen overflow-y-scroll  snap-y snap-mandatory">
+      <div className="h-auto w-screen bg-[#F5FBFF] overflow-visible relative">
+        <Home />
+        <Why />
+        <MembershipCard />
+        <How />
+        <Mentors />
+        <Stories />
+        <Faqs />
+        <ConnectWithUs />
+      </div>
     </div>
   );
 }
