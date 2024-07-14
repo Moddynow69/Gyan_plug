@@ -44,7 +44,7 @@ export default function FaqItem({ heading, paragraph }: Props) {
       <div
         className={` font-medium text-white text-[12px] lg:text-[24px] leading-[16.8px] lg:leading-[33.6px] items-start bg-[rgba(20,164,225,1)] rounded-md lg:rounded-lg w-[100%]  ${
           isVisible
-            ? "duration-700 ease opacity-100 h-fit py-[0.6rem] lg:py-[1rem] px-[0.6rem] lg:px-[1.5rem]"
+            ? "duration-700 ease opacity-100 h-fit py-[9.6px] lg:py-[16px] px-[9.6px] lg:px-[24px]"
             : "duration-700 ease opacity-0 h-0 px-0 py-0 -z-10"
         }`}
       >
