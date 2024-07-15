@@ -18,10 +18,10 @@ export default function Navbar() {
             alt={NavbarData.logo.alt}
             width={196.96}
             height={65.68}
-            className="xl:w-[196.96px] w-[140px] xl:h-[112.66px] h-[37.74px]"
+            className="2xl:w-[196.96px] w-[140px] 2xl:h-[112.66px] h-[37.74px]"
           />
         </Link>
-        <div className="hidden lg:flex justify-start items-start 2xl:gap-6 xl:gap-4 gap-2 ">
+        <div className="hidden lg:flex justify-start items-start gap-2 2xl:gap-6">
           {NavbarItems.map((item, idx) => (
             <NavbarItem title={item.title} link={item.link} key={idx} />
           ))}
@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className="flex flex-col gap-[34px]">
           <div className="flex flex-col gap-4">
             {NavbarItems.map((item, idx) => (
-              <NavbarItem title={item.title} link={item.link} key={idx} />
+              <NavbarItem title={item.title} link={item.link} key={idx} setMenuopen={setMenuopen}/>
             ))}
             <ButtonComponent
               content="Book Session"

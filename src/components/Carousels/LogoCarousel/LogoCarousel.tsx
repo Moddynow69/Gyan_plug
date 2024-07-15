@@ -24,6 +24,11 @@ export default function LogoCarousel() {
           ))}
         </div>
       </div>
+      <div className=" text-[#0C356A99] md:text-[8px] text-[6px] md:leading-3 leading-[10px] font-bold">
+        <span className="text-red-600 text-sm">*</span>All logos are the
+        property of their respective institution holders. Use of them does not
+        imply any affiliation with or endorsement by them.
+      </div>
     </div>
   );
 }

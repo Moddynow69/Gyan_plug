@@ -8,8 +8,8 @@ const NavbarItems: { title: string; link: string }[] = [
     link: "/#how-it-works",
   },
   {
-    title: "Mentors",
-    link: "/#mentors",
+    title: "Admission Counsellor",
+    link: "/#admissioncounsellor",
   },
   {
     title: "Success Stories",
