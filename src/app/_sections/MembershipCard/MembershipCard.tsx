@@ -1,22 +1,36 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Heading from "@/components/Heading/Heading";
+import Animation from "@/components/Animation/animation";
 
 export default function MembershipCard() {
   return (
-    <div className="h-auto lg:h-[667px] w-full flex flex-col lg:flex-row justify-between items-center lg:items-start pt-9 lg:pt-[100px] pl-5 xl:pl-14 2xl:pl-[150px] pr-5 lg:pr-0 gap-[86px] md:gap-0 lg:gap-12 xl:gap-[86px] overflow-x-hidden snap-start snap-always">
+    <div
+      id="exclusive"
+      className="h-auto lg:h-[667px] w-full flex flex-col lg:flex-row justify-between items-center lg:items-start pt-9 lg:pt-[100px] pl-5 xl:pl-14 2xl:pl-[150px] pr-5 lg:pr-0 gap-[86px] md:gap-0 lg:gap-12 xl:gap-[86px] overflow-x-hidden snap-start snap-always"
+    >
       <div className="max-w-[519px] h-auto xl:h-[464px] flex flex-col gap-6  py-6 xl:py-[72px]">
-        <div className="w-full h-auto flex flex-col items-start">
-          <Heading content={"Gyanplug Exclusive"} from="#041020" to="#F3BF57" />
-          <Heading content={"Membership Card"} from="#041020" to="#F3BF57" />
-        </div>
-        <div className="text-[#002324CC] text-[12px] lg:text-[20px] ledaing-[15.62px] lg:leading-8 text-center lg:text-left">
-          Empower your educational journey with the Gyanplug Membership Card.
-          Enjoy special privileges across loans, hostels, local clubs,
-          professional networking events, and more. Designed to enhance your
-          student life and career opportunities!
-        </div>
+        <Animation threshold={0} duration="900ms" x={-100} y={0} delay="0s">
+          <div className="w-full h-auto flex flex-col items-start">
+            <Heading
+              content={"Gyanplug Exclusive"}
+              from="#041020"
+              to="#F3BF57"
+            />
+            <Heading content={"Membership Card"} from="#041020" to="#F3BF57" />
+          </div>
+        </Animation>
+        <Animation threshold={0} duration="900ms" x={-100} y={0} delay="600ms">
+          <div className="text-[#002324CC] text-[12px] lg:text-[20px] ledaing-[15.62px] lg:leading-8 text-center lg:text-left">
+            Empower your educational journey with the Gyanplug Membership Card.
+            Enjoy special privileges across loans, hostels, local clubs,
+            professional networking events, and more. Designed to enhance your
+            student life and career opportunities!
+          </div>
+        </Animation>
       </div>
+      <Animation threshold={0} duration="900ms" x={300} y={0} delay="900ms">
       <div className="relative h-auto md:h-[382.01px] xl:h-[498px] w-full lg:w-auto flex justify-center lg:justify-start items-end lg:items-start">
         <div className=" w-[349px] md:w-[500px] lg:w-[500px] xl:w-[651.8px] h-[169px] md:h-[256.4px] lg:h-[382.01px] xl:h-[498px] bg-[#F3BF57] rounded-[36px] lg:rounded-none lg:rounded-l-[36px] relative lg:static flex justify-center">
           <Image
@@ -28,6 +42,7 @@ export default function MembershipCard() {
           />
         </div>
       </div>
+      </Animation>
     </div>
   );
 }

@@ -43,7 +43,7 @@ export default function ButtonComponent({
       <Link
         href={"http://app.gyanplug.com/"}
         target="_blank"
-        className={`flex w-[144px] h-[43px] md:h-auto md:w-[320px] pt-[20px] pb-[20px] pl-[24px] pr-[24px] justify-center items-center gap-[4px] text-base lg:text-xl rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${className}`}
+        className={`flex w-[144px] h-[43px] md:h-auto md:w-[320px] pt-[20px] pb-[20px] pl-[24px] pr-[24px] justify-center items-center gap-[4px] text-base lg:text-xl rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] whitespace-nowrap ${className}`}
       >
         {content}
         {arrow && (
@@ -61,7 +61,7 @@ export default function ButtonComponent({
       <Link
         href={"http://app.gyanplug.com/"}
         target="_blank"
-        className={`py-[8px] flex w-[100%] xl:w-[230px] xl:py-[10px] px-[19.2px] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] ${className} `}
+        className={`py-[8px] flex w-[100%] xl:w-[230px] xl:py-[10px] px-[19.2px] justify-center items-center gap-[4px] xl:text-xl text-base rounded-[6px] bg-[#14A4E1] ${folito.className} font-bold hover:bg-[#0174BE] hover:gap-[12px] hover:cursor-pointer transition-all duration-300 ease text-[#FFF9EB] whitespace-nowrap ${className} `}
       >
         {content}
         {arrow && (

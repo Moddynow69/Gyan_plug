@@ -1,5 +1,5 @@
 const home = {
-  heading1: "hape Your Future by Connecting with",
+  heading1: "Shape Your Future by Connecting with",
   spanHeading: "Top Counselors",
   heading2: "Across India",
   subHeading:

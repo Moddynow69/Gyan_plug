@@ -1,7 +1,8 @@
+"use client";
 import FaqItem from "@/components/FaqItem/FaqItem";
 import Heading from "@/components/Heading/Heading";
 import { FaqItems } from "@/constants/Faq/FaqItems";
-
+import Animation from "@/components/Animation/animation";
 export default function Faqs() {
   return (
     <div
@@ -12,11 +13,19 @@ export default function Faqs() {
       <div className="flex flex-col gap-3 lg:gap-6">
         {FaqItems.map((faqitem, i) => {
           return (
-            <FaqItem
-              heading={faqitem.heading}
-              paragraph={faqitem.paragraph}
+            <Animation
+              threshold={0}
+              duration="900ms"
+              x={-100}
+              y={0}
+              delay={100*i+'ms'}
               key={i}
-            />
+            >
+              <FaqItem
+                heading={faqitem.heading}
+                paragraph={faqitem.paragraph}
+              />
+            </Animation>
           );
         })}
       </div>
