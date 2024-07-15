@@ -26,6 +26,7 @@ export default function Partners() {
               content="Apply as a counsellor today!"
               type="primary"
               arrow={false}
+              link="https://docs.google.com/forms/d/e/1FAIpQLSfQ1b6UqgC8wGV1JFHYWWEeCOVrylSJRsvRYkwV4gT80gIqkA/viewform"
             />
           </div>
           <Image

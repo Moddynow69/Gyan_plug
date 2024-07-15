@@ -10,7 +10,7 @@ type Props = {
   zIndex?: number;
   className?: string;
 };
-const animation = ({
+const Animation = ({
   children,
   threshold,
   duration,
@@ -74,4 +74,4 @@ const animation = ({
     </div>
   );
 };
-export default animation;
+export default Animation;
