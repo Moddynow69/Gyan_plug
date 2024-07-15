@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
 import Heading from "@/components/Heading/Heading";
@@ -13,7 +13,7 @@ export default function Why() {
     >
       <div className="h-auto w-full">
         <Animation threshold={0} duration="900ms" x={0} y={-100} delay="0s">
-        <Heading content="Why Choose Gyanplug?" from="#F5FBFF" to="#58BDFE" />
+          <Heading content="Why Choose Gyanplug?" from="#F5FBFF" to="#58BDFE" />
         </Animation>
       </div>
       <Animation

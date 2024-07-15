@@ -33,7 +33,7 @@ export default function ButtonComponent({
             height={48}
             alt=">"
             className="w-6 h-6 md:w-auto md:h-auto"
-            src="images/chevron-forward.svg"
+            src="/icons/chevron_forward.png"
           />
         )}
       </Link>
@@ -51,7 +51,7 @@ export default function ButtonComponent({
             width={28}
             height={28}
             alt=">"
-            src="images/chevron-forward.svg"
+            src="/icons/chevron-forward.png"
           />
         )}
       </Link>
@@ -69,7 +69,7 @@ export default function ButtonComponent({
             width={28}
             height={28}
             alt=">"
-            src="images/chevron-forward.svg"
+            src="/icons/chevron_forward.png"
           />
         )}
       </Link>
