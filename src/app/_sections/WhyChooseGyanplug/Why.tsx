@@ -31,6 +31,7 @@ export default function Why() {
             height={527}
             width={483}
             alt=""
+            unoptimized={true}
           />
           <Image
             src={"/images/1_min.png"}
@@ -38,6 +39,7 @@ export default function Why() {
             height={320}
             width={318}
             alt=""
+            unoptimized={true}
           />
           <div className="hidden xl:flex border-2 border-solid border-[#0259A2] bg-[#0174BE33] w-[523px] h-[527px] xl:w-[969px] justify-start items-end overflow-hidden relative pl-9  gap-2  xl:gap-2 2xl:gap-10 rounded-3xl">
             <Image
@@ -46,6 +48,7 @@ export default function Why() {
               width={523}
               alt=""
               className="h-auto w-auto absolute top-0 left-0 z-0"
+              unoptimized={true}
             />
             <Image
               src={"/images/Icon.svg"}
@@ -53,6 +56,7 @@ export default function Why() {
               width={100}
               alt=""
               className="h-auto w-auto absolute top-[11px] left-[19px] z-10"
+              unoptimized={true}
             />
             <div className="mb-11 w-[401px] flex flex-col gap-[129px] z-10">
               <div className="w-full flex flex-col gap-4">
@@ -75,9 +79,11 @@ export default function Why() {
               style={{
                 mixBlendMode: "luminosity",
               }}
+              unoptimized={true}
             />
           </div>
           <Image
+            unoptimized={true}
             src={"/images/3_min.png"}
             height={527}
             width={483}
