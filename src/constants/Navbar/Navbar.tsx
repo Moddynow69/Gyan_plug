@@ -1,7 +1,7 @@
 const NavbarItems: { title: string; link: string }[] = [
   {
     title: "About Us",
-    link: "/#about",
+    link: "/aboutus",
   },
   {
     title: "How It Works",

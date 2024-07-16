@@ -33,7 +33,7 @@ export default function Home() {
                       strings={[home.heading1 + " "]}
                       typeSpeed={40}
                     />
-                    <span className="text-[#14A4E1] whitespace-nowrap">
+                    <span className="text-[#14A4E1]">
                       <ReactTyped
                         strings={[home.spanHeading]}
                         typeSpeed={40}
@@ -43,7 +43,7 @@ export default function Home() {
                     <ReactTyped
                       strings={[" " + home.heading2]}
                       typeSpeed={40}
-                      startDelay={3500}
+                      startDelay={4500}
                     />
                   </div>
                   <div className="h-[auto] w-full text-[#0C356A99] md:text-[24px] text-[14px] md:leading-9 leading-5 font-medium">
