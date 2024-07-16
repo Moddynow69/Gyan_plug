@@ -7,44 +7,52 @@ import Link from "next/link";
 import ButtonComponent from "../ButtonComponent/Button";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({show}: {show: boolean}) {
   const [menuopen, setMenuopen] = useState(false);
   return (
     <>
-      <div className="z-[1000] absolute left-1/2 translate-x-[-50%] lg:top-12 w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1488px] lg:h-[98px] h-[70px] pl-2 pr-5 xl:px-4 2xl:px-8 py-[16.3px] lg:rounded-2xl border-[0.5px] border-[#E8E8E899] backdrop-blur-[44px] justify-between items-center inline-flex bg-[#FFFFFFCC] shadow-[0px_12px_48px_0px_#0067690D] ">
-        <Link href="/" scroll className="min-w-fit min-h-fit">
-          <Image
-            src={NavbarData.logo.src}
-            alt={NavbarData.logo.alt}
-            width={196.96}
-            height={65.68}
-            className="2xl:w-[196.96px] w-[140px] 2xl:h-[112.66px] h-[37.74px]"
+      <div
+        className={`z-[1000] sticky ${
+          show
+            ? "top-0 lg:top-12 duration-300 ease-linear"
+            : "top-[-200px] duration-300 ease-linear"
+        } w-full h-0 flex justify-center`}
+      >
+        <div className="w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1488px] lg:h-[98px] h-[70px] pl-2 pr-5 xl:px-4 2xl:px-8 py-[16.3px] lg:rounded-2xl border-[0.5px] border-[#E8E8E899] backdrop-blur-[44px] justify-between items-center inline-flex bg-[#FFFFFFCC] shadow-[0px_12px_48px_0px_#0067690D] ">
+          <Link href="/" scroll className="min-w-fit min-h-fit">
+            <Image
+              src={NavbarData.logo.src}
+              alt={NavbarData.logo.alt}
+              width={196.96}
+              height={65.68}
+              className="2xl:w-[196.96px] w-[140px] 2xl:h-[112.66px] h-[37.74px]"
+            />
+          </Link>
+          <div className="hidden lg:flex justify-start items-start gap-2 2xl:gap-6">
+            {NavbarItems.map((item, idx) => (
+              <NavbarItem title={item.title} link={item.link} key={idx} />
+            ))}
+          </div>
+          <ButtonComponent
+            content="Book Session"
+            type="tertiary"
+            className="hidden lg:flex"
           />
-        </Link>
-        <div className="hidden lg:flex justify-start items-start gap-2 2xl:gap-6">
-          {NavbarItems.map((item, idx) => (
-            <NavbarItem title={item.title} link={item.link} key={idx} />
-          ))}
+          <Image
+            src="/icons/menu.svg"
+            width={24}
+            height={24}
+            alt="Menu"
+            className="lg:hidden cursor-pointer"
+            onClick={() => setMenuopen(!menuopen)}
+          />
         </div>
-        <ButtonComponent
-          content="Book Session"
-          type="tertiary"
-          className="hidden lg:flex"
-        />
-        <Image
-          src="/icons/menu.svg"
-          width={24}
-          height={24}
-          alt="Menu"
-          className="lg:hidden cursor-pointer"
-          onClick={() => setMenuopen(!menuopen)}
-        />
       </div>
       <div
         className={
           menuopen
-            ? "z-[1000] w-screen  h-full fixed bottom-0 right-0 bg-transparent"
-            : "hidden w-0"
+            ? "z-[1000] w-screen  h-full fixed bottom-0 right-0 bg-transparent duration-300"
+            : "hidden w-0 duration-300"
         }
       >
         <div

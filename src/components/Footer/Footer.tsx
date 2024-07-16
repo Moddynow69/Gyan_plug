@@ -2,6 +2,7 @@ import Image from "next/image";
 import ButtonComponent from "../ButtonComponent/Button";
 import { folito } from "@/app/fonts";
 import { FooterData } from "@/constants/Footer/Foooter";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -20,9 +21,9 @@ export default function Footer() {
           <div
             className={`tracking-tight text-[#FDFDFD] text-[11.2px] lg:text-[17.6px] font-[400] lg:leading-[32px] break-words ${folito.className}`}
           >
-            Wisdom Rd, Sco 142 Nirman Point
+            {FooterData.details.address}
             <br />
-            +1283871239190213021
+            {FooterData.details.phone}
           </div>
           <div className="">
             <ButtonComponent type="tertiary" content="Book Session" />
@@ -31,54 +32,43 @@ export default function Footer() {
         <div
           className={`links ${folito.className} flex flex-row gap-[27.2px] justify-between md:justify-start xl:justify-between lg:gap-[16px] xl:gap-[52.8px]`}
         >
-          <div className="row flex flex-col gap-[6.4px] lg:gap-[6.4px] xl:gap-[12px]">
-            <div className="heading">
-              <span className="text-[#FDFDFD] text-[19.2px] lg:text-[23.2px] font-[700] leading-[37.16px] break-words">
-                Company
-              </span>
+          {FooterData.links.map((link, index) => (
+            <div className="flex flex-col gap-[6.4px] lg:gap-[6.4px] xl:gap-[12px]">
+              <div className="heading">
+                <span className="text-[#FDFDFD] text-[19.2px] lg:text-[23.2px] font-[700] leading-[37.16px] break-words">
+                  {link.heading}
+                </span>
+              </div>
+              <div className="subheading flex flex-col gap-[4px] lg:gap-[4.8px] xl:gap-[12px]">
+                {link.subheading.map((sub, index) => (
+                  <Link
+                    href={sub.link}
+                    className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words"
+                  >
+                    {sub.title}
+                  </Link>
+                ))}
+              </div>
             </div>
-            <div className="subheading flex flex-col gap-[4px] lg:gap-[4.8px] xl:gap-[12px]">
-              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
-                Book Session
-              </span>
-              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
-                Why Gyanplug?
-              </span>
-              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
-                How it works?
-              </span>
-              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
-                Testimonials
-              </span>
-            </div>
-          </div>
-          <div className="row flex flex-col gap-[6.4px] lg:gap-[6.4px] xl:gap-[12px]">
-            <div className="heading">
-              <span className="text-[#FDFDFD] text-[19.2px] lg:text-[23.2px] font-[700] leading-[37.16px] break-words">
-                Legal
-              </span>
-            </div>
-            <div className="subheading flex flex-col gap-[4px] lg:gap-[12px]">
-              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
-                Terms & Conditions
-              </span>
-              <span className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words">
-                Privacy policy
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
         <div className="logos mt-6 lg:mt-4 xl:mt-8">
           <div className="logoscontainer flex flex-row gap-4">
             {FooterData.icons.map((image, index) => (
-              <Image
-                key={index}
-                className="cursor-pointer w-10 lg:w-auto"
-                width={image.width}
-                height={image.height}
-                alt={image.alt}
-                src={image.src}
-              />
+              <Link
+                href={image.href}
+                className="h-fit w-fit rounded-full"
+                target="_blank"
+              >
+                <Image
+                  key={index}
+                  className="cursor-pointer w-10 lg:w-auto"
+                  width={image.width}
+                  height={image.height}
+                  alt={image.alt}
+                  src={image.src}
+                />
+              </Link>
             ))}
           </div>
         </div>
@@ -86,7 +76,7 @@ export default function Footer() {
       <div
         className={`lower ${folito.className} font-medium text-[11.2px] lg:text-[23.2px] break-words text-[#ECF8FE] text-center py-[16px] lg:py-[24px] bg-[#001838]`}
       >
-        &#169; 2024 Gyaanplug. All rights reserved.
+        &#169; {FooterData.details.copyRight}
       </div>
     </div>
   );

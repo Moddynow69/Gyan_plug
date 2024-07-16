@@ -4,10 +4,10 @@
     }
 
     100% {
-        transform: translateX(calc(-109px * 9 + 24px * 8))
+        transform: translateX(calc(-50% - 12px));
     }
 }
 
 .slide-track {
-    animation: scroll 27s linear infinite;
+    animation: scroll 40s linear infinite;
 }

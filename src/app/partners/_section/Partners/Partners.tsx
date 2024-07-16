@@ -1,12 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar";
 import ButtonComponent from "@/components/ButtonComponent/Button";
 import Image from "next/image";
 import { dmSans, folito } from "@/app/fonts";
 export default function Partners() {
   return (
-    <div>
-      <Navbar />
-      <div className="h-auto w-screen flex flex-col items-center justify-end pt-[112px] lg:pt-[218px]">
+      <div className="h-auto w-screen flex flex-col items-center justify-end pt-[112px] lg:pt-[218px] snap-start">
         <div className="w-[100%] max-w-[930px] flex flex-col gap-9 items-center">
           <div className="w-[100%] max-w-[328px] lg:max-w-[100%] flex flex-col items-center gap-5 lg:gap-[24px]">
             <div className="w-[100%] flex flex-col items-center gap-[8px] lg:gap-[19.84px]">
@@ -45,6 +42,5 @@ export default function Partners() {
           />
         </div>
       </div>
-    </div>
   );
 }

@@ -41,15 +41,15 @@ export default function ConnectWithUs() {
         </div>
         <div className="flex flex-col lg:min-w-[650px] z-10 mb-10">
           <div className="flex flex-col tracking-tight w-[100%]">
-            <div className="text-center text-[16px] sm:text-[40px] leading-normal font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
-              Soon Mentor Booking at
+            <div className="text-center text-[16px] md:text-[40px] leading-normal font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
+              Coming Soon Admission Counsellor
             </div>
-            <div className="text-center text-[16px] sm:text-[40px] leading-normal font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
-              Your Fingertips&#33;
+            <div className="text-center text-[16px] md:text-[40px] leading-normal font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
+            booking on Mobile App&#33;
             </div>
           </div>
           <div className="text-center leading-relaxed text-[11.2px] lg:text-[22.4px] text-[rgba(253,253,253,0.60)] pt-1 lg:pt-6 font-medium tracking-tighter w-[100%]">
-            Sign up now to recieve a notification <br /> when our app goes live!
+          Sing up to receive a notification once app goes live.
           </div>
           <div className="pt-2 lg:pt-20 w-[100%]">
             <NotifyMe />
