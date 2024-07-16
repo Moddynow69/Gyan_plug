@@ -33,7 +33,10 @@ export default function Footer() {
           className={`links ${folito.className} flex flex-row gap-[27.2px] justify-between md:justify-start xl:justify-between lg:gap-[16px] xl:gap-[52.8px]`}
         >
           {FooterData.links.map((link, index) => (
-            <div className="flex flex-col gap-[6.4px] lg:gap-[6.4px] xl:gap-[12px]">
+            <div
+              className="flex flex-col gap-[6.4px] lg:gap-[6.4px] xl:gap-[12px]"
+              key={index}
+            >
               <div className="heading">
                 <span className="text-[#FDFDFD] text-[19.2px] lg:text-[23.2px] font-[700] leading-[37.16px] break-words">
                   {link.heading}
@@ -44,6 +47,7 @@ export default function Footer() {
                   <Link
                     href={sub.link}
                     className="text-[#FDFDFD] text-[12.8px] lg:text-[17.6px] xl:text-[20.8px] max-lg: tracking-tight font-[100] lg:font-[300] break-words"
+                    key={index}
                   >
                     {sub.title}
                   </Link>
@@ -59,9 +63,9 @@ export default function Footer() {
                 href={image.href}
                 className="h-fit w-fit rounded-full"
                 target="_blank"
+                key={index}
               >
                 <Image
-                  key={index}
                   className="cursor-pointer w-10 lg:w-auto"
                   width={image.width}
                   height={image.height}
