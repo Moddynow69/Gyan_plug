@@ -15,11 +15,11 @@ export default function MembershipCard() {
         <Animation threshold={0} duration="900ms" x={-100} y={0} delay="0s">
           <div className="w-full h-auto flex flex-col items-start justify-start">
             <Heading
-              content={"Gyanplug Exclusive"}
+              content={"Exclusive Gyanplug"}
               from="#041020"
               to="#F3BF57"
             />
-            <Heading content={"Membership Card"} from="#041020" to="#F3BF57" align="start" />
+            <Heading content={"Membership Card"} from="#041020" to="#F3BF57" align="start" className="text-center lg:text-left" />
           </div>
         </Animation>
         <Animation threshold={0} duration="900ms" x={-100} y={0} delay="600ms">

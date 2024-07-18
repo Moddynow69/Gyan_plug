@@ -1,7 +1,7 @@
 const HowCardData = [
   {
     title: "Select Your Counselor",
-    description: "Choose from our curated list of top counselors.",
+    description: "Choose from our curated list of top admission counsellors.",
     image: "/images/howCard/1.svg",
     top: "0px",
     bgColor: "#062E3F",
@@ -26,7 +26,7 @@ const HowCardData = [
   {
     title: "Happy! Or Explore More Mentors",
     description:
-      "Enjoy your session or find other mentors for additional insights.",
+      "Continue Your Admission Journey with him/her or Book Appointment with another counsellor.",
     image: "/images/howCard/4.svg",
     top: "60px",
     bgColor: "#3D0531",

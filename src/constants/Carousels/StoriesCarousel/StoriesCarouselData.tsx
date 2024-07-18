@@ -48,7 +48,7 @@ const StoriesCarouselData: StoriesCarouselDataType = [
     name: "Rohan Gupta",
     location: "Location 5",
     experience:
-      "Navigating the college admission process seemed daunting until I found Gyanplug. Their counselors provided personalized guidance that not only helped me get into my dream college but also eased my anxiety. I can't thank them enough for making this journey smoother and more successful.",
+      "Navigating the college admission process seemed daunting until I found Gyanplug. Their Counselors provided personalized guidance that not only helped me get into my dream college but also eased my anxiety. I can't thank them enough for making this journey smoother and more successful.",
     admissions: "Admissions 5",
     image: "/images/Logo.svg",
   },
@@ -66,7 +66,7 @@ const StoriesCarouselData: StoriesCarouselDataType = [
     name: "Vivek Mehta",
     location: "Location 7",
     experience:
-      "Choosing the right engineering college was a critical decision for me, and Gyanplug's counselors made it so much easier. They helped me weigh my options and select a college that was the best fit for my aspirations and potential. The guidance I received was invaluable and truly tailored to my needs.",
+      "Choosing the right engineering college was a critical decision for me, and Gyanplug's Counselors made it so much easier. They helped me weigh my options and select a college that was the best fit for my aspirations and potential. The guidance I received was invaluable and truly tailored to my needs.",
     admissions: "Admissions 7",
     image: "/images/Logo.svg",
   },

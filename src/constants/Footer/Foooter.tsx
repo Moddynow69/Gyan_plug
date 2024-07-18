@@ -1,12 +1,12 @@
 export const FooterData = {
   details: {
-    address: "Wisdom Rd, Sco 142 Nirman Point",
+    address: "",
     phone: "+1283871239190213021",
     link: "http://app.gyanplug.com/",
     copyRight: "2024 Gyaanplug. All rights reserved.",
   },
   logo: {
-    src: "images/Logo_dark.svg",
+    src: "images/Logos/Logo_dark.svg",
     width: 260,
     height: 96,
     alt: "N",

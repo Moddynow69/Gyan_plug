@@ -42,7 +42,7 @@ export default function ConnectWithUs() {
         <div className="flex flex-col lg:min-w-[650px] z-10 mb-10">
           <div className="flex flex-col tracking-tight w-[100%]">
             <div className="text-center text-[16px] md:text-[40px] leading-normal font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
-              Coming Soon Admission Counsellor
+              Coming Soon Admission Counselor
             </div>
             <div className="text-center text-[16px] md:text-[40px] leading-normal font-[800] bg-gradient-to-r from-[#F5FBFF] to-[#58BDFE] bg-clip-text text-transparent">
             booking on Mobile App&#33;

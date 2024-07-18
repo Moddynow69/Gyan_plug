@@ -13,7 +13,7 @@ const MentorsCarouselData: MentorsCarouselDataType = [
     location: "ApnaMBA.com",
     experience: "10+ Years",
     admissions: "1000+",
-    image: "/images/Praveen Agarwal.jpg",
+    image: "/images/Counselors/Praveen Agarwal.jpg",
   },
   {
     topRated: true,
@@ -21,7 +21,7 @@ const MentorsCarouselData: MentorsCarouselDataType = [
     location: "ApnaMBA.com",
     experience: "10+ Years",
     admissions: "1000+",
-    image: "/images/Snehashree Dash.jpg",
+    image: "/images/Counselors/Snehashree Dash.jpg",
   },
   {
     topRated: true,
@@ -29,7 +29,7 @@ const MentorsCarouselData: MentorsCarouselDataType = [
     location: "GTRC CONSULTING",
     experience: "8 Years",
     admissions: "200+",
-    image: "/images/Ayesha ansari.jpg",
+    image: "/images/Counselors/Ayesha ansari.jpg",
   },
   {
     topRated: true,
@@ -37,7 +37,7 @@ const MentorsCarouselData: MentorsCarouselDataType = [
     location: "Guide Me Education Services",
     experience: "5 Years",
     admissions: "200+",
-    image: "/images/Rachna Mishra.jpeg",
+    image: "/images/Counselors/Rachna Mishra.jpeg",
   },
   {
     topRated: true,
@@ -45,7 +45,7 @@ const MentorsCarouselData: MentorsCarouselDataType = [
     location: "Guide me education services",
     experience: "6 Years",
     admissions: "150",
-    image: "/images/Sayanti Kusari Naskar.jpeg",
+    image: "/images/Counselors/Sayanti Kusari Naskar.jpeg",
   },
   {
     topRated: true,
@@ -53,7 +53,7 @@ const MentorsCarouselData: MentorsCarouselDataType = [
     location: "Guide Me Education",
     experience: "6 Years",
     admissions: "240",
-    image: "/images/Sulata Mondal.jpeg",
+    image: "/images/Counselors/Sulata Mondal.jpeg",
   },
 ];
 

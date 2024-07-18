@@ -2,7 +2,7 @@ export const FaqItems: { heading: string; paragraph: string }[] = [
   {
     heading: "What is Gyanplug?",
     paragraph:
-      "Gyanplug is a free platform for selected education counselors to connect with students seeking admission guidance.",
+      "Gyanplug is a free platform for selected education Counselors to connect with students seeking admission guidance.",
   },
   {
     heading: "Who can apply for the same?",
@@ -17,7 +17,7 @@ export const FaqItems: { heading: string; paragraph: string }[] = [
   {
     heading: "Do I have to pay for any services?",
     paragraph:
-      "Currently, this platform will be free of cost for selected counselors. In the future, if there are any charges/fees, the same will be informed in advance.",
+      "Currently, this platform will be free of cost for selected Counselors. In the future, if there are any charges/fees, the same will be informed in advance.",
   },
   {
     heading:
@@ -34,7 +34,7 @@ export const FaqItems: { heading: string; paragraph: string }[] = [
   {
     heading: "Can I customize my profile and services on the platform?",
     paragraph:
-      "Yes, the counselor can personalize their profile and specify their counseling services & offers, etc., subject to platform policies & guidelines.",
+      "Yes, the Counselor can personalize their profile and specify their counseling services & offers, etc., subject to platform policies & guidelines.",
   },
   {
     heading: "Can I charge students for counseling services?",
@@ -43,8 +43,8 @@ export const FaqItems: { heading: string; paragraph: string }[] = [
   },
   {
     heading:
-      "How does the platform handle disputes between counselors and students?",
+      "How does the platform handle disputes between Counselors and students?",
     paragraph:
-      "Our support team mediates disputes between counselors and students. Policies and Guidelines ensure a fair and ethical environment.",
+      "Our support team mediates disputes between Counselors and students. Policies and Guidelines ensure a fair and ethical environment.",
   },
 ];

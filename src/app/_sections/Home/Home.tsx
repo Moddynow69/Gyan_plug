@@ -47,7 +47,12 @@ export default function Home() {
                   />
                 </div>
                 <div className="h-[auto] w-full text-[#0C356A99] md:text-[24px] text-[14px] md:leading-9 leading-5 font-medium">
-                  {home.subHeading}
+                <ReactTyped
+                    cursorChar={""}
+                    strings={[home.subHeading]}
+                    typeSpeed={60}
+                    startDelay={5500}
+                  />
                 </div>
               </div>
               <ButtonComponent content={home.button} type="primary" link={home.buttonLink} />

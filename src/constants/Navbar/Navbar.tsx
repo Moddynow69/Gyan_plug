@@ -8,7 +8,7 @@ const NavbarItems: { title: string; link: string }[] = [
     link: "/#goldcard",
   },
   {
-    title: "Admission Counsellor",
+    title: "Admission Counselor",
     link: "/#admissioncounsellor",
   },
   {
@@ -17,11 +17,7 @@ const NavbarItems: { title: string; link: string }[] = [
   },
   {
     title: "Contact Us",
-    link: "#contactus",
-  },
-  {
-    title: "Partners",
-    link: "/partners",
+    link: "/contactus",
   },
 ];
 export default NavbarItems;
