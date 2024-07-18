@@ -1,27 +1,96 @@
 const LogoCarouselData = [
-  { src: "/images/College Logos/logo (1).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (2).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (3).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (4).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (5).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (6).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (7).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (8).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (9).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (10).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (11).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (12).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (13).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (14).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (15).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (16).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (17).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (18).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (19).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (20).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (21).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (22).PNG", alt: "University Logo" },
-  { src: "/images/College Logos/logo (23).PNG", alt: "University Logo" },
+  {
+    src: "/images/College Logos/1.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/2.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/3.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/4.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/5.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/6.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/7.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/8.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/9.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/10.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/11.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/12.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/13.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/14.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/15.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/16.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/17.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/18.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/19.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/20.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/21.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/22.PNG",
+    alt: "University Logo",
+  },
+  {
+    src: "/images/College Logos/23.PNG",
+    alt: "University Logo",
+  },
 ];
 
 export default LogoCarouselData;

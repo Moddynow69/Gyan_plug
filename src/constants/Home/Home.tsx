@@ -1,10 +1,10 @@
 const home = {
-  heading1: "Shape Your Future by Connecting with",
-  spanHeading: "Top Counselors",
-  heading2: "Across India",
-  subHeading:
-    "Book and Meet Top 1.6% Education Counselors from All Over India for Free to Find Your Dream College!",
+  heading1: "Connect with ",
+  spanHeading: "Hand-Picked",
+  heading2: "Admission Counsellors Across India.",
+  subHeading: "Shape Your Future with Top Admission Experts!",
   button: "Book Your Free Session!",
+  buttonLink: "http://app.gyanplug.com/",
   image: "/images/Map.gif",
   LogosHeading: "Connecting Students for 100+ Top Universities",
 };

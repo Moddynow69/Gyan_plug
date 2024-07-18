@@ -2,6 +2,7 @@ export const FooterData = {
   details: {
     address: "Wisdom Rd, Sco 142 Nirman Point",
     phone: "+1283871239190213021",
+    link: "http://app.gyanplug.com/",
     copyRight: "2024 Gyaanplug. All rights reserved.",
   },
   logo: {

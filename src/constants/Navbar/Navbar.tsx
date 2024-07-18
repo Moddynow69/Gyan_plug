@@ -4,20 +4,20 @@ const NavbarItems: { title: string; link: string }[] = [
     link: "/aboutus",
   },
   {
-    title: "How It Works",
-    link: "/#how-it-works",
+    title: "Gold Card",
+    link: "/#goldcard",
   },
   {
     title: "Admission Counsellor",
     link: "/#admissioncounsellor",
   },
   {
-    title: "Success Stories",
-    link: "/#success-stories",
-  },
-  {
     title: "FAQs",
     link: "#faqs",
+  },
+  {
+    title: "Contact Us",
+    link: "#contactus",
   },
   {
     title: "Partners",

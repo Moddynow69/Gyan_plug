@@ -6,7 +6,7 @@ const NavbarData = {
   },
   button: {
     label: "Book Session",
-    href: "/",
+    href: "http://app.gyanplug.com/",
   },
 };
 

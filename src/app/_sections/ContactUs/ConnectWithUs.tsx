@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ConnectWithUs() {
   return (
-    <div className="bg-[#041020] pt-12 lg:pt-28 w-[100%] snap-start">
+    <div className="bg-[#041020] pt-12 lg:pt-28 w-[100%] snap-start" id="contactus">
       <div
         className={`flex flex-row justify-center lg:justify-between px-1 md:px-10 ${folito.className} mb-[10px] lg:mb-[20px]`}
       >
@@ -49,7 +49,7 @@ export default function ConnectWithUs() {
             </div>
           </div>
           <div className="text-center leading-relaxed text-[11.2px] lg:text-[22.4px] text-[rgba(253,253,253,0.60)] pt-1 lg:pt-6 font-medium tracking-tighter w-[100%]">
-          Sing up to receive a notification once app goes live.
+          Sign up to receive a notification once app goes live.
           </div>
           <div className="pt-2 lg:pt-20 w-[100%]">
             <NotifyMe />

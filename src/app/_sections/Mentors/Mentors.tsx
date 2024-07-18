@@ -1,5 +1,6 @@
 import ButtonComponent from "@/components/ButtonComponent/Button";
 import MentorsCarousel from "@/components/Carousels/MentorsCarousel/MentorsCarousel";
+import MentorsData from "@/constants/Mentors/Mentors";
 import Heading from "@/components/Heading/Heading";
 
 export default function Mentors() {
@@ -13,8 +14,8 @@ export default function Mentors() {
       </div>
       <MentorsCarousel />
       <div className="w-auto h-auto absolute bottom-[79.08px] md:bottom-[98.29px] left-1/2 translate-x-[-50%] overflow-visible">
-        <ButtonComponent content="View All" type="secondary" className="hidden md:flex"/>
-        <ButtonComponent content="View All" type="secondary" arrow={false} className=" rounded-md md:hidden"/>
+        <ButtonComponent content="Book Session!" type="secondary" className="hidden md:flex" link={MentorsData.link}/>
+        <ButtonComponent content="Book Session!" type="secondary" arrow={false} className=" rounded-md md:hidden" link={MentorsData.link}/>
       </div>
     </div>
   );

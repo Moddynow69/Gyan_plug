@@ -26,25 +26,31 @@ export default function Home() {
                 <div
                   className={`h-auto min-h-[64px] lg:min-h-[180px] 2xl:min-h-[120px] w-full font-black ${folito.className} md:text-[40px] text-[24px] md:leading-[60px] leading-8 text-[#0C356A]`}
                 >
-                  <ReactTyped strings={[home.heading1 + " "]} typeSpeed={40} />
-                  <span className="text-[#14A4E1]">
-                    <ReactTyped
-                      strings={[home.spanHeading]}
-                      typeSpeed={40}
-                      startDelay={2500}
-                    />
-                  </span>
                   <ReactTyped
-                    strings={[" " + home.heading2]}
-                    typeSpeed={40}
-                    startDelay={4500}
+                    strings={[home.heading1]}
+                    typeSpeed={60}
+                    cursorChar={""}
+                  />{" "}
+                  <span className="text-[#14A4E1] whitespace-nowrap">
+                    <ReactTyped
+                      cursorChar={""}
+                      strings={[home.spanHeading]}
+                      typeSpeed={60}
+                      startDelay={1000}
+                    />
+                  </span>{" "}
+                  <ReactTyped
+                    cursorChar={""}
+                    strings={[home.heading2]}
+                    typeSpeed={60}
+                    startDelay={2000}
                   />
                 </div>
                 <div className="h-[auto] w-full text-[#0C356A99] md:text-[24px] text-[14px] md:leading-9 leading-5 font-medium">
                   {home.subHeading}
                 </div>
               </div>
-              <ButtonComponent content={home.button} type="primary" />
+              <ButtonComponent content={home.button} type="primary" link={home.buttonLink} />
             </div>
             <div className="w-full h-auto inline-flex  gap-3 md:gap-6 flex-col  mb-3 lg:mb-0">
               <Image

@@ -1,0 +1,7 @@
+const AboutUsData = {
+  title: "About Us",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero delectus quam, sed libero vitae, temporibus ab sint culpa expedita optio nisi aut velit placeat accusantium, dolorum tempore corrupti! Ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero delectus quam, sed libero vitae, temporibus ab sint culpa expedita optio nisi aut velit placeat accusantium, dolorum tempore corrupti! Ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero delectus quam, sed libero vitae, temporibus ab sint culpa expedita optio nisi aut velit placeat accusantium, dolorum tempore corrupti! Ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero delectus quam, sed libero vitae, temporibus ab sint culpa expedita optio nisi aut velit placeat accusantium, dolorum tempore corrupti! Ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero delectus quam, sed libero vitae, temporibus ab sint culpa expedita optio nisi aut velit placeat accusantium, dolorum tempore corrupti! Ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero delectus quam, sed libero vitae, temporibus ab sint culpa expedita optio nisi aut velit placeat accusantium, dolorum tempore corrupti! Ex?",
+};
+
+export default AboutUsData;

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Heading from "@/components/Heading/Heading";
 import ButtonComponent from "@/components/ButtonComponent/Button";
+import WhyData from "@/constants/Why/WhyData";
 import Animation from "@/components/Animation/animation";
 
 export default function Why() {
@@ -13,7 +14,7 @@ export default function Why() {
     >
       <div className="h-auto w-full">
         <Animation threshold={0} duration="900ms" x={0} y={-100} delay="0s">
-          <Heading content="Why Choose Gyanplug?" from="#F5FBFF" to="#58BDFE" />
+          <Heading content={WhyData.Heading} from={"#F5FBFF"} to="#58BDFE" />
         </Animation>
       </div>
       <Animation
@@ -68,7 +69,7 @@ export default function Why() {
                   placement assistance.
                 </div>
               </div>
-              <ButtonComponent content="Book Session" type="secondary" />
+              <ButtonComponent content="Book Session" type="secondary" link={WhyData.link}/>
             </div>
             <Image
               src={"/images/WhyCardImg2.png"}

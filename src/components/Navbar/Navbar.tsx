@@ -37,6 +37,7 @@ export default function Navbar({show}: {show: boolean}) {
             content="Book Session"
             type="tertiary"
             className="hidden lg:flex"
+            link={NavbarData.button.href}
           />
           <Image
             src="/icons/menu.svg"

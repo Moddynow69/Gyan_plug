@@ -26,7 +26,7 @@ export default function Footer() {
             {FooterData.details.phone}
           </div>
           <div className="">
-            <ButtonComponent type="tertiary" content="Book Session" />
+            <ButtonComponent type="tertiary" content="Book Session" link={FooterData.details.link} />
           </div>
         </div>
         <div
