@@ -19,6 +19,7 @@ export default function AboutUs() {
             x={-100}
             y={0}
             delay="600ms"
+            key={i}
           >
             <div
               key={i}
