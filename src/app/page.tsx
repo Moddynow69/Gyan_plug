@@ -8,7 +8,8 @@ import MembershipCard from "./_sections/MembershipCard/MembershipCard";
 import Stories from "./_sections/Stories/Stories";
 import Navbar from "@/components/Navbar/Navbar";
 import How from "./_sections/HowItWorks/How";
-import { useState } from "react";
+import { Suspense, useState } from "react";
+import Loading from "./loading";
 export default function HomePage() {
   const [visible, setVisible] = useState(true);
   const [show, setShow] = useState(true);
@@ -25,25 +26,27 @@ export default function HomePage() {
     setLast(e.currentTarget.scrollTop);
   };
   return (
-    <div
-      className="h-screen w-screen overflow-y-scroll  snap-y snap-mandatory"
-      onScroll={controlNavbar}
-    >
-      <Navbar show={show} />
-      <div className="h-auto w-screen bg-[#F5FBFF] overflow-visible relative">
-        <Home />
-        <Why />
-        <MembershipCard />
-        <How visible={visible} setVisible={setVisible} />
-        {visible && (
-          <>
-            <Mentors />
-            <Stories />
-            <Faqs />
-            <ConnectWithUs />
-          </>
-        )}
+    <Suspense fallback={<Loading />}>
+      <div
+        className="h-screen w-screen overflow-y-scroll  snap-y snap-mandatory"
+        onScroll={controlNavbar}
+      >
+        <Navbar show={show} />
+        <div className="h-auto w-screen bg-[#F5FBFF] overflow-visible relative">
+          <Home />
+          <Why />
+          <MembershipCard />
+          <How visible={visible} setVisible={setVisible} />
+          {visible && (
+            <>
+              <Mentors />
+              <Stories />
+              <Faqs />
+              <ConnectWithUs />
+            </>
+          )}
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 }

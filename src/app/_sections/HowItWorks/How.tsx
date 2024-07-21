@@ -15,13 +15,11 @@ export default function How({
   const childRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const child = childRef.current;
-    let count = false;
     if (!child) return;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.intersectionRatio >= 0.1 && !count) {
-            count = true;
+          if (entry.intersectionRatio >= 0.1 && child.scrollTop < 1410) {
             setVisible(false);
             setTimeout(() => {
               setVisible(true);
