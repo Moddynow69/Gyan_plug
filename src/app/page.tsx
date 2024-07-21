@@ -39,7 +39,7 @@ export default function HomePage() {
           <>
             <Mentors />
             <Stories />
-            <Faqs />
+            <Faqs type="Students" />
             <ConnectWithUs />
           </>
         )}

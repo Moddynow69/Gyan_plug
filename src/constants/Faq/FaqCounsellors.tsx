@@ -1,4 +1,4 @@
-export const FaqItems: { heading: string; paragraph: string }[] = [
+export const FaqCounsellors: { heading: string; paragraph: string }[] = [
   {
     heading: "What is Gyanplug?",
     paragraph:
