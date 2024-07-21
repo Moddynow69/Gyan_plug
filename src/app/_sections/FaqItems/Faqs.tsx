@@ -1,9 +1,15 @@
 "use client";
 import FaqItem from "@/components/FaqItem/FaqItem";
 import Heading from "@/components/Heading/Heading";
-import { FaqItems } from "@/constants/Faq/FaqItems";
+import { FaqCounsellors } from "@/constants/Faq/FaqCounsellors";
 import Animation from "@/components/Animation/animation";
-export default function Faqs() {
+import { FaqStudents } from "@/constants/Faq/FaqStudents";
+
+type Props = {
+  type: "Students" | "Counsellors";
+};
+
+export default function Faqs({ type }: Props) {
   return (
     <div
       id="faqs"
@@ -11,23 +17,42 @@ export default function Faqs() {
     >
       <Heading content="FAQs" from="#041020" to="#0174BE" />
       <div className="flex flex-col gap-3 lg:gap-6">
-        {FaqItems.map((faqitem, i) => {
-          return (
-            <Animation
-              threshold={0}
-              duration="900ms"
-              x={-100}
-              y={0}
-              delay={100*i+'ms'}
-              key={i}
-            >
-              <FaqItem
-                heading={faqitem.heading}
-                paragraph={faqitem.paragraph}
-              />
-            </Animation>
-          );
-        })}
+        {type === "Counsellors" &&
+          FaqCounsellors.map((faqitem, i) => {
+            return (
+              <Animation
+                threshold={0}
+                duration="900ms"
+                x={-100}
+                y={0}
+                delay={100 * i + "ms"}
+                key={i}
+              >
+                <FaqItem
+                  heading={faqitem.heading}
+                  paragraph={faqitem.paragraph}
+                />
+              </Animation>
+            );
+          })}
+        {type === "Students" &&
+          FaqStudents.map((faqitem, i) => {
+            return (
+              <Animation
+                threshold={0}
+                duration="900ms"
+                x={-100}
+                y={0}
+                delay={100 * i + "ms"}
+                key={i}
+              >
+                <FaqItem
+                  heading={faqitem.heading}
+                  paragraph={faqitem.paragraph}
+                />
+              </Animation>
+            );
+          })}
       </div>
     </div>
   );

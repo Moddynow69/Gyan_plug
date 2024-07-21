@@ -27,7 +27,7 @@ export default function HomePage() {
       <Navbar show={show} />
       <div className="h-auto w-screen bg-[#F5FBFF] overflow-visible relative">
         <Partners />
-        <Faqs />
+        <Faqs type="Counsellors" />
         <ConnectWithUs />
       </div>
     </div>
