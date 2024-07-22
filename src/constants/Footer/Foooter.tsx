@@ -5,6 +5,17 @@ export const FooterData = {
     link: "http://app.gyanplug.com/",
     copyRight: "2024 Gyaanplug. All rights reserved.",
   },
+  reachUs: [
+    { img: "icons/call.svg", content: "+1012 3456 789" },
+    {
+      img: "icons/email.svg",
+      content: "demo@gmail.com",
+    },
+    {
+      img: "icons/location2.svg",
+      content: "132 Dartmouth Street Boston, Massachusetts 02156 United States",
+    },
+  ],
   logo: {
     src: "images/Logos/Logo_dark.svg",
     width: 260,
