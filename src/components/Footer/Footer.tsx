@@ -24,7 +24,7 @@ export default function Footer() {
           >
             {FooterData.reachUs.map((item, i) => {
               return (
-                <div className="flex gap-[24px] items-start">
+                <div className="flex gap-[24px] items-start" key={i}>
                   <Image src={item.img} width={24} height={24} alt=""></Image>
                   <p className="text-[16px] leading-normal">{item.content}</p>
                 </div>
