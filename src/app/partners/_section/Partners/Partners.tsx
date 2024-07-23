@@ -27,14 +27,14 @@ export default function Partners() {
           />
         </div>
         <Image
-          src="/images/Partners.svg"
+          src="/images/Partners/Partners.svg"
           width={930}
           height={504}
           alt=""
           className="w-full hidden lg:block"
         />
         <Image
-          src="/images/Partners_min.svg"
+          src="/images/Partners/Partners_min.svg"
           width={330}
           height={283}
           alt=""

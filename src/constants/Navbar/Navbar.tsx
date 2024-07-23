@@ -8,16 +8,16 @@ const NavbarItems: { title: string; link: string }[] = [
     link: "/#goldcard",
   },
   {
+    title: "How It works",
+    link: "/#howitworks",
+  },
+  {
     title: "Admission Counselor",
     link: "/#admissioncounsellor",
   },
   {
     title: "FAQs",
     link: "#faqs",
-  },
-  {
-    title: "Contact Us",
-    link: "/contactus",
   },
 ];
 export default NavbarItems;

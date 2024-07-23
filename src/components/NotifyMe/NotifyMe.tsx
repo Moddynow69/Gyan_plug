@@ -6,7 +6,7 @@ export default function NotifyMe() {
     <form>
       <div className="flex flex-row lg:gap-0 justify-between bg-[rgba(240,248,253,0.10)] rounded-md lg:rounded-xl pr-1 pl-2 lg:py-4 py-2 lg:pr-4 lg:pl-6">
         <div className="flex flex-row gap-1 lg:gap-3 w-full">
-          <Image src="images/mail.svg" width={23} height={23} alt="email" className="w-[12.8px] lg:w-auto max-w-[32px]" />
+          <Image src="icons/mail.svg" width={23} height={23} alt="email" className="w-[12.8px] lg:w-auto max-w-[32px]" />
           <input
             type="text"
             name="email"

@@ -28,7 +28,7 @@ export default function HomePage() {
   return (
     <Suspense fallback={<Loading />}>
       <div
-        className="h-screen w-screen overflow-y-scroll  snap-y snap-mandatory"
+        className="h-screen w-screen overflow-y-scroll"
         onScroll={controlNavbar}
       >
         <Navbar show={show} />
@@ -41,7 +41,7 @@ export default function HomePage() {
             <>
               <Mentors />
               <Stories />
-              <Faqs />
+              <Faqs type="Students"/>
               <ConnectWithUs />
             </>
           )}

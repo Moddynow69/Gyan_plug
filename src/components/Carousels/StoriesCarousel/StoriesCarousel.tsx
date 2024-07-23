@@ -53,7 +53,7 @@ export default function StoriesCarousel() {
   return (
     <div className="w-full h-full md:h-[507px] flex justify-start relative overflow-visible">
       <Image
-        src="/images/Next-button.svg"
+        src="/icons/Next-button.svg"
         alt="Previous"
         width={50}
         height={50}
@@ -63,7 +63,7 @@ export default function StoriesCarousel() {
         }}
       />
       <Image
-        src="/images/Next-button.svg"
+        src="/icons/Next-button.svg"
         alt="Next"
         width={50}
         height={50}
@@ -83,7 +83,7 @@ export default function StoriesCarousel() {
         </div>
       </div>
       <div className="hidden lg:block h-auto w-auto top-[380px] left-1/2 -translate-x-1/2 absolute">
-        <div className="w-40 h-6 bg-[#FDFDFD99] px-[16.8px] py-2 gap-[8.8px] flex rounded-[80px]">
+        <div className="w-auto h-6 bg-[#FDFDFD99] px-[16.8px] py-2 gap-[8.8px] flex rounded-[80px]">
           {[...Array(StoriesCarouselData.length)].map((_, index) => (
             <div
               key={index}

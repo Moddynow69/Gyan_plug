@@ -31,7 +31,7 @@ export default function FaqItem({ heading, paragraph }: Props) {
             width={42}
             alt="->"
             id="arrow"
-            src="images/Next-button.svg"
+            src="icons/Next-button.svg"
             className={`transform transition-transform w-[28px] lg:w-auto duration-700 ease ${
               isVisible ? "rotate-90" : "rotate-0"
             } flex-shrink-0`}

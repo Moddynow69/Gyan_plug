@@ -42,7 +42,7 @@ export default function How({
   }, []);
   return (
     <div
-      id="how-it-works"
+      id="howitworks"
       className="h-auto lg:h-[1074px] w-screen flex flex-col relative overflow-hidden pt-20 gap-[72px] snap-center snap-always"
     >
       <Animation duration="1100ms" delay="0s" x={0} y={-100} threshold={0}>

@@ -27,9 +27,9 @@ export default function HowCard({
       }}
     >
       <div className="lg:h-[260px] xl:h-[340px] lg:w-[616px] mb-9 flex flex-col justify-between gap-4 lg:gap-0">
-        <div className="h-auto flex flex-col justify-between gap-4 lg:gap-0">
+        <div className="h-auto flex flex-col justify-between gap-4">
           <div
-            className=" font-normal text-[24px] leading-[31.25px]"
+            className=" font-normal text-[14px] lg:text-[24px] leading-[18.23px] lg:leading-[31.25px]"
             style={{
               color: textColor,
             }}
@@ -55,7 +55,7 @@ export default function HowCard({
           width={672}
           height={476}
           alt=""
-          className=" w-[302px] md:w-full lg:w-[500px] xl:w-auto xl:h-auto shadow-[-7px_4px_18px_0px_#000000A6,-27px_18px_32px_0px_#0000008F,-60px_40px_43px_0px_#00000054,-107px_72px_51px_0px_#0000001A,-167px_112px_56px_0px_#00000003]"
+          className=" w-[302px] md:w-full lg:w-[500px] xl:w-auto xl:h-auto shadow-[-7px_4px_18px_0px_#000000A6,-27px_18px_32px_0px_#0000008F,-60px_40px_43px_0px_#00000054,-107px_72px_51px_0px_#0000001A,-167px_112px_56px_0px_#00000003] rounded-lg"
         />
       </div>
     </div>

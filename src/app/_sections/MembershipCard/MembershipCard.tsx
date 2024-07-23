@@ -35,7 +35,7 @@ export default function MembershipCard() {
         <div className="relative h-auto md:h-[382.01px] xl:h-[498px] w-full lg:w-auto flex justify-center lg:justify-start items-end lg:items-start">
           <div className=" w-[349px] md:w-[500px] lg:w-[500px] xl:w-[651.8px] h-[169px] md:h-[256.4px] lg:h-[382.01px] xl:h-[498px] bg-[#F3BF57] rounded-[36px] lg:rounded-none lg:rounded-l-[36px] relative lg:static flex justify-center">
             <Image
-              src={"/images/Father.png"}
+              src={"/images/Card/Father.png"}
               height={411}
               width={652.04}
               alt=""

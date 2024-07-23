@@ -7,7 +7,7 @@ import Link from "next/link";
 import ButtonComponent from "../ButtonComponent/Button";
 import { useState } from "react";
 
-export default function Navbar({show}: {show: boolean}) {
+export default function Navbar({ show }: { show: boolean }) {
   const [menuopen, setMenuopen] = useState(false);
   return (
     <>
@@ -28,7 +28,7 @@ export default function Navbar({show}: {show: boolean}) {
               className="2xl:w-[196.96px] w-[140px] 2xl:h-[112.66px] h-[37.74px]"
             />
           </Link>
-          <div className="hidden lg:flex justify-start items-start gap-2 2xl:gap-6">
+          <div className="hidden lg:flex justify-start items-start gap-6">
             {NavbarItems.map((item, idx) => (
               <NavbarItem title={item.title} link={item.link} key={idx} />
             ))}
@@ -52,38 +52,37 @@ export default function Navbar({show}: {show: boolean}) {
       <div
         className={
           menuopen
-            ? "z-[1000] w-screen  h-full fixed bottom-0 right-0 bg-transparent duration-300"
-            : "hidden w-0 duration-300"
+            ? "z-[1000] w-screen h-screen fixed bottom-0 right-0 bg-transparent"
+            : "z-[-1000] w-screen h-screen fixed bottom-0 right-0 bg-transparent"
         }
+        onClick={() => setMenuopen(false)}
+      />
+      <div
+        className={`fixed bottom-0 h-full w-[258px] border-[0.5px] border-solid border-[#D9D8D8] rounded-l-xl flex 
+            ${
+              menuopen
+                ? "duration-[400ms] right-0"
+                : "duration-[400ms] right-[-300px]"
+            } z-[1000] flex-col px-6 py-5 gap-5 lg:hidden backdrop-blur-3xl bg-[#FFFFFF99] `}
       >
-        <div
-          className="w-screen h-screen"
-          onClick={() => setMenuopen(false)}
-        ></div>
-        <div
-          className={`fixed bottom-0 right-0 h-full border-[0.5px] border-solid border-[#D9D8D8] rounded-l-xl flex ${
-            menuopen ? " w-[258px] duration-[300ms]" : "hidden w-0"
-          } flex-col px-6 py-5 gap-5 lg:hidden backdrop-blur-3xl bg-[#FFFFFF99] `}
-        >
-          <Image
-            src={"/icons/close.svg"}
-            alt={"close"}
-            width={24}
-            height={24}
-            className="cursor-pointer self-end"
-            onClick={() => setMenuopen(!menuopen)}
-          />
-          <div className="flex flex-col gap-[34px]">
-            <div className="flex flex-col gap-4">
-              {NavbarItems.map((item, idx) => (
-                <NavbarItem
-                  title={item.title}
-                  link={item.link}
-                  key={idx}
-                  setMenuopen={setMenuopen}
-                />
-              ))}
-            </div>
+        <Image
+          src={"/icons/close.svg"}
+          alt={"close"}
+          width={24}
+          height={24}
+          className="cursor-pointer self-end"
+          onClick={() => setMenuopen(!menuopen)}
+        />
+        <div className="flex flex-col gap-[34px]">
+          <div className="flex flex-col gap-4">
+            {NavbarItems.map((item, idx) => (
+              <NavbarItem
+                title={item.title}
+                link={item.link}
+                key={idx}
+                setMenuopen={setMenuopen}
+              />
+            ))}
           </div>
         </div>
       </div>
