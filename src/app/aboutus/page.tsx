@@ -20,7 +20,7 @@ export default function HomePage() {
   };
   return (
     <div
-      className="h-screen w-screen overflow-y-scroll  snap-y snap-mandatory"
+      className="h-screen w-screen overflow-y-scroll"
       onScroll={controlNavbar}
     >
       <Navbar show={show} />

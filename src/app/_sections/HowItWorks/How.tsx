@@ -6,10 +6,8 @@ import React, { useEffect, useRef } from "react";
 import Animation from "@/components/Animation/animation";
 
 export default function How({
-  visible,
   setVisible,
 }: {
-  visible: boolean;
   setVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }): JSX.Element {
   const childRef = useRef<HTMLDivElement | null>(null);
@@ -31,19 +29,36 @@ export default function How({
         threshold: [0.1],
       }
     );
+    const observer2 = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if(entry.intersectionRatio>0.5){
+            child.style.overflowY="scroll"
+          }
+          else{
+            child.style.overflowY="hidden"
+          }
+        });
+      },
+      {
+        threshold: [0.5],
+      }
+    );
 
     observer.observe(child);
+    observer2.observe(child);
 
     return () => {
       if (child) {
         observer.unobserve(child);
+        observer2.unobserve(child);
       }
     };
   }, []);
   return (
     <div
       id="howitworks"
-      className="h-auto lg:h-[1074px] w-screen flex flex-col relative overflow-hidden pt-20 gap-[72px] snap-center snap-always"
+      className="h-auto lg:h-[1074px] w-screen flex flex-col relative overflow-hidden pt-20 gap-[72px] snap-center "
     >
       <Animation duration="1100ms" delay="0s" x={0} y={-100} threshold={0}>
         <Heading content="How it Works?" from="#041020" to="#0174BE" />

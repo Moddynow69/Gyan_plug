@@ -9,7 +9,7 @@ import Animation from "@/components/Animation/animation";
 
 export default function Home() {
   return (
-    <div className="min-h-screen h-auto w-screen flex flex-col items-center relative overflow-hidden snap-start snap-always">
+    <div className="min-h-screen h-auto w-screen flex flex-col items-center relative overflow-hidden  ">
       <div className="h-full w-full lg:w-[1000px] xl:w-[1200px] 2xl:w-[1488px] flex flex-col lg:flex-row items-center lg:items-start gap-2.5 lg:gap-20 px-5 lg:px-0 z-10 justify-between">
         <Animation
           threshold={0}
@@ -28,30 +28,30 @@ export default function Home() {
                 >
                   <ReactTyped
                     strings={[home.heading1]}
-                    typeSpeed={60}
+                    typeSpeed={30}
                     cursorChar={""}
                   />{" "}
                   <span className="text-[#14A4E1] whitespace-nowrap">
                     <ReactTyped
                       cursorChar={""}
                       strings={[home.spanHeading]}
-                      typeSpeed={60}
-                      startDelay={1000}
+                      typeSpeed={30}
+                      startDelay={800}
                     />
                   </span>{" "}
                   <ReactTyped
                     cursorChar={""}
                     strings={[home.heading2]}
-                    typeSpeed={60}
-                    startDelay={2000}
+                    typeSpeed={30}
+                    startDelay={1200}
                   />
                 </div>
                 <div className="h-[auto] w-full text-[#0C356A99] md:text-[24px] text-[14px] md:leading-9 leading-5 font-medium">
                 <ReactTyped
                     cursorChar={""}
                     strings={[home.subHeading]}
-                    typeSpeed={60}
-                    startDelay={5500}
+                    typeSpeed={30}
+                    startDelay={2800}
                   />
                 </div>
               </div>

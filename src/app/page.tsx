@@ -36,12 +36,12 @@ export default function HomePage() {
           <Home />
           <Why />
           <MembershipCard />
-          <How visible={visible} setVisible={setVisible} />
+          <How setVisible={setVisible} />
           {visible && (
             <>
               <Mentors />
               <Stories />
-              <Faqs type="Students"/>
+              <Faqs type="Students" />
               <ConnectWithUs />
             </>
           )}

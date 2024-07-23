@@ -7,8 +7,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div>
-      <div className="upper flex flex-col md:flex-row justify-between px-5 lg:px-[48px] xl:px-[80px] py-3 lg:pt-[200px] lg:pb-14 bg-[#0C356A] rounded-t-[12.8px] lg:rounded-t-[41px]">
-        <div className="flex justify-start items-center lg:absolute lg:bottom-[370px] lg:w-[90%] xl:w-[89%] 2xl:w-[94%] lg:justify-center lg:flex-col gap-[30px]">
+      <div className="upper flex flex-col gap-6 md:gap-[54px] justify-between px-5 lg:px-[48px] xl:px-[80px] 2xl:px-[120px] pb-3 lg:pb-14 pt-9 lg:pt-[54px] bg-[#0C356A] rounded-t-[12.8px] lg:rounded-t-[41px]">
+        <div className="flex justify-start items-center w-full lg:justify-center lg:flex-col gap-[30px]">
           <Image
             src={FooterData.logo.src}
             width={FooterData.logo.width}
@@ -16,8 +16,9 @@ export default function Footer() {
             alt={FooterData.logo.alt}
             className="w-[228px] lg:w-[250px] -ml-6"
           />
-          <hr className="hidden lg:block w-[100%] h-[0.5px] bg-[rgba(255,255,255,0.60)]" />
+          <hr className="hidden lg:block w-full h-0 border-t-[0.5px] border-[#FFFFFF99]" />
         </div>
+        <div className="w-full flex flex-col lg:flex-row justify-between">
         <div className="gyanplug flex flex-col gap-[14.4px] lg:gap-[25.6px] mb-5 lg:mb-0 lg:max-w-[250px]">
           <div
             className={`tracking-tight text-[#FDFDFD] lg:text-[17.6px] font-[400] lg:leading-[32px] break-words ${folito.className} flex flex-col gap-[24px]`}
@@ -93,6 +94,7 @@ export default function Footer() {
               className="lg:w-[250px]"
             />
           </div>
+        </div>
         </div>
       </div>
       <div

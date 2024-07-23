@@ -9,7 +9,7 @@ export default function MembershipCard() {
   return (
     <div
       id="goldcard"
-      className="h-auto lg:h-[667px] w-full flex flex-col lg:flex-row justify-between items-center lg:items-start pt-9 lg:pt-[100px] pl-5 xl:pl-14 2xl:pl-[150px] pr-5 lg:pr-0 gap-[86px] md:gap-0 lg:gap-12 xl:gap-[86px] overflow-x-hidden snap-start snap-always"
+      className="h-auto lg:h-[667px] w-full flex flex-col lg:flex-row justify-between items-center lg:items-start pt-9 lg:pt-[100px] pl-5 xl:pl-14 2xl:pl-[150px] pr-5 lg:pr-0 gap-[86px] md:gap-0 lg:gap-12 xl:gap-[86px] overflow-x-hidden  "
     >
       <div className="max-w-[519px] h-auto xl:h-[464px] flex flex-col gap-6  py-6 xl:py-[72px]">
         <Animation threshold={0} duration="900ms" x={-100} y={0} delay="0s">

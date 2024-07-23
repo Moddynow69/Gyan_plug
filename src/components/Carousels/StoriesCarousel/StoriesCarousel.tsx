@@ -51,7 +51,7 @@ export default function StoriesCarousel() {
   }, [scrolls, scrolling]);
 
   return (
-    <div className="w-full h-full md:h-[507px] flex justify-start relative overflow-visible">
+    <div className="w-full h-full md:h-[507px] flex justify-start relative overflow-y-visible">
       <Image
         src="/icons/Next-button.svg"
         alt="Previous"
@@ -76,7 +76,7 @@ export default function StoriesCarousel() {
         className="h-full w-full flex overflow-x-scroll overflow-visible md:pointer-events-none items-start snap-x snap-mandatory relative"
         ref={scArr}
       >
-        <div className="flex gap-[28px] md:gap-[76.8px] mx-[38%] overflow-visible">
+        <div className="flex gap-[28px] md:gap-[76.8px] mx-[38%] overflow-y-visible">
           {StoriesCarouselData.map((story, index) => (
             <StoriesCarouselTItem key={index} story={story} />
           ))}

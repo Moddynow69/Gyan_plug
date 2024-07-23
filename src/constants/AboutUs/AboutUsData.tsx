@@ -1,6 +1,8 @@
 const AboutUsData: {
   title: string;
   paragraphs: { heading: string; paragraph: string }[];
+  title2: string;
+  paragraph2: { heading: string; paragraph: string }[];
 } = {
   title: "About Us",
   paragraphs: [
@@ -18,6 +20,24 @@ const AboutUsData: {
       heading: "Our Mission",
       paragraph:
         "Our mission is to bridge the gap between students and professional admission counselors, making quality guidance accessible to all. We aim to create a platform where students can connect with experienced counselors, receive personalized advice, and make well-informed choices for their academic future.",
+    },
+  ],
+  title2: "Why Choose Gyanplug?",
+  paragraph2: [
+    {
+      heading: "Discovery of Top Counsellors",
+      paragraph:
+        "Our platform allows you to discover India's top admission counselors and access limited free counseling sessions, helping you make the right choices for your academic journey.",
+    },
+    {
+      heading: "Post-Admission Services",
+      paragraph:
+        "We go beyond admission counseling by offering support for internships and placements, ensuring you have a smooth transition into the professional world.",
+    },
+    {
+      heading: "Gold Membership Card",
+      paragraph:
+        "As a Gyanplug member, you can enjoy exclusive privileges on loans, hostels, clubs, and networking events, giving you a head start in your educational and professional life.",
     },
   ],
 };

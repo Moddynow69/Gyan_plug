@@ -9,7 +9,7 @@ export default function Why() {
   return (
     <div
       id="why"
-      className="h-auto lg:h-[1043px] w-full flex flex-col lg:px-10 py-9 lg:py-[72px] gap-9 lg:gap-[72px] bg-[#041020] snap-start snap-always"
+      className="h-auto lg:h-[1043px] w-full flex flex-col lg:px-10 py-9 lg:py-[72px] gap-9 lg:gap-[72px] bg-[#041020]  "
     >
       <div className="h-auto w-full">
         <Animation threshold={0} duration="900ms" x={0} y={-100} delay="0s">
@@ -33,7 +33,7 @@ export default function Why() {
               }}
             />
             <div
-              className="absolute top-0 left-1/2 -translate-x-1/2 w-[284px] md:w-[567px] lg:w-[400px] xl:w-[567px] h-[440px] md:h-[639px] lg:h-[600px] xl:h-[639px] shadow-[0px_18px_40px_0px_#2555404A,0px_73px_73px_0px_#25554042,0px_165px_99px_0px_#25554026,0px_294px_118px_0px_#2555400A,0px_459px_129px_0px_#25554003] p-0.5"
+              className="absolute top-0 left-1/2 -translate-x-1/2 w-[284px] md:w-[567px] lg:w-[400px] xl:w-[567px] h-[440px] md:h-[643px] lg:h-[600px] xl:h-[643px] shadow-[0px_18px_40px_0px_#2555404A,0px_73px_73px_0px_#25554042,0px_165px_99px_0px_#25554026,0px_294px_118px_0px_#2555400A,0px_459px_129px_0px_#25554003] p-0.5"
               style={{
                 borderRadius: "24px",
                 background:
@@ -86,7 +86,7 @@ export default function Why() {
               }}
             />
             <div
-              className="absolute top-0 left-1/2 -translate-x-1/2 w-[284px] md:w-[567px] lg:w-[400px] xl:w-[567px] h-[440px] md:h-[639px] lg:h-[600px] xl:h-[639px] shadow-[0px_20px_45px_0px_#084B684A,0px_81px_81px_0px_#084B6842,0px_183px_110px_0px_#084B6826,0px_326px_130px_0px_#084B680A,0px_509px_143px_0px_#084B6803] p-0.5"
+              className="absolute top-0 left-1/2 -translate-x-1/2 w-[284px] md:w-[567px] lg:w-[400px] xl:w-[567px] h-[440px] md:h-[643px] lg:h-[600px] xl:h-[643px] shadow-[0px_20px_45px_0px_#084B684A,0px_81px_81px_0px_#084B6842,0px_183px_110px_0px_#084B6826,0px_326px_130px_0px_#084B680A,0px_509px_143px_0px_#084B6803] p-0.5"
               style={{
                 borderRadius: "24px",
                 background:
