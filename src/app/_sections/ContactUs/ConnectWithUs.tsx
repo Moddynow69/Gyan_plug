@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ConnectWithUs() {
   return (
-    <div className="bg-[#041020] pt-12 lg:pt-28 w-[100%] " id="contactus">
+    <div className="bg-[#041020] pt-12 lg:pt-28 w-[100%] " id="notify">
       <div
         className={`flex flex-row justify-center lg:justify-between px-1 md:px-10 ${folito.className} mb-[10px] lg:mb-[20px]`}
       >

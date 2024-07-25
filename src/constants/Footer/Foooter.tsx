@@ -1,19 +1,17 @@
 export const FooterData = {
   details: {
-    address: "",
-    phone: "+1283871239190213021",
     link: "http://app.gyanplug.com/",
     copyRight: "2024 Gyaanplug. All rights reserved.",
   },
   reachUs: [
-    { img: "icons/call.svg", content: "+1012 3456 789" },
+    { img: "icons/call.svg", content: "+91 8088132664" },
     {
       img: "icons/email.svg",
-      content: "demo@gmail.com",
+      content: "info@gyanplug.com",
     },
     {
       img: "icons/location2.svg",
-      content: "132 Dartmouth Street Boston, Massachusetts 02156 United States",
+      content: "Gyanplug, 10th Floor, WeWork, RMZ Latitude Commercial Building, Bellary Rd,  Byatarayanapura, Bengaluru, Karnataka 560024",
     },
   ],
   logo: {

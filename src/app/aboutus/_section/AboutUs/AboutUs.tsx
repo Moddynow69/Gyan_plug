@@ -18,7 +18,7 @@ export default function AboutUs() {
             duration="900ms"
             x={-100}
             y={0}
-            delay="600ms"
+            delay={i*300+"ms"}
             key={i}
           >
             <div
@@ -26,18 +26,18 @@ export default function AboutUs() {
             >
               {item.heading}
             </div>
-            <div
+            <p
               key={i}
-              className={`text-[#002324CC] text-[12px] lg:text-[20px] ledaing-[15.62px] lg:leading-8 lg:text-left text-justify ${dmSans.className}`}
+              className={`text-[#002324CC] text-[12px] lg:text-[20px] ledaing-[15.62px] lg:leading-8 text-justify ${dmSans.className}`}
             >
               {item.paragraph}
-            </div>
+            </p>
           </Animation>
         );
       })}
       <div className="w-full h-auto flex flex-col items-start justify-start">
-          <Heading content={AboutUsData.title2} from="#0C356A" to="#0C356A" />
-        </div>
+        <Heading content={AboutUsData.title2} from="#0C356A" to="#0C356A" />
+      </div>
       {AboutUsData.paragraph2.map((item, i) => {
         return (
           <Animation
@@ -45,14 +45,14 @@ export default function AboutUs() {
             duration="900ms"
             x={-100}
             y={0}
-            delay="600ms"
+            delay={i*300+"ms"}
             key={i}
           >
             <span
               className={`text-[#002324CC] font-bold text-[20px] lg:text-[32px] ledaing-[28px] lg:leading-14 text-left ${folito.className}}`}
             >
               {item.heading}:{" "}
-            </span> 
+            </span>
             <span
               key={i}
               className={`text-[#002324CC] text-[12px] lg:text-[20px] ledaing-[15.62px] lg:leading-8 lg:text-left text-justify ${dmSans.className}`}
