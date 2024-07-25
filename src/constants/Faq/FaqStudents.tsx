@@ -5,7 +5,7 @@ export const FaqStudents: { heading: string; paragraph: ReactElement }[] = [
     heading: "What are the benefits of the Gyanplug platform?",
     paragraph: (
       <>
-        Discovery of Top Counsellors: Find India's top admission counsellors and
+        Discovery of Top Counsellors: Find India&apos;s top admission counsellors and
         access limited free counselling sessions.
         <br />
         Post-Admission Services: Get internships and placements desk support.
@@ -95,7 +95,7 @@ export const FaqStudents: { heading: string; paragraph: ReactElement }[] = [
       "What if the Admission Counsellor is deviating from their commitment?",
     paragraph: (
       <>
-        You can use Gyanplug's Ombudsman Services. Our Ombudsman will work with
+        You can use Gyanplug&apos;s Ombudsman Services. Our Ombudsman will work with
         you and the counsellor to address the issue.
       </>
     ),

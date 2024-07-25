@@ -1,11 +1,11 @@
 "use client";
 import { folito } from "@/app/fonts";
 import Image from "next/image";
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 
 interface Props {
   heading: string;
-  paragraph: string;
+  paragraph: ReactElement | string;
 }
 
 export default function FaqItem({ heading, paragraph }: Props) {
