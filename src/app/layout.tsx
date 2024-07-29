@@ -11,10 +11,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Gyan Plug",
-    images: [ { url: "images/THBHNL.jpg" } ],
+    images: [ { url: "https://ibb.co/17ryW35" } ],
   },
 };
-<meta property="og:image" content="images/THBHNL.jpg" />;
 
 export default function RootLayout({
   children,
