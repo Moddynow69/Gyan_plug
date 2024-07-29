@@ -5,6 +5,14 @@ import { folito, inter } from "./fonts";
 export const metadata: Metadata = {
   title: "Gyan Plug",
   description: "Education Counselors",
+  openGraph: {
+    title: "Gyan Plug",
+    description: "Education Counselors",
+    type: "website",
+    locale: "en_US",
+    siteName: "Gyan Plug",
+    images: [ { url: "https://example.com/images/THBHNL.jpg" } ],
+  },
 };
 <meta property="og:image" content="https://example.com/images/THBHNL.jpg" />;
 
