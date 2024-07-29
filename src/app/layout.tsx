@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Gyan Plug",
-    images: [ { url: "https://example.com/images/THBHNL.jpg" } ],
+    images: [ { url: "images/THBHNL.jpg" } ],
   },
 };
-<meta property="og:image" content="https://example.com/images/THBHNL.jpg" />;
+<meta property="og:image" content="images/THBHNL.jpg" />;
 
 export default function RootLayout({
   children,
