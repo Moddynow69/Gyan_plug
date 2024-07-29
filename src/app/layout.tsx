@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Gyan Plug",
   description: "Education Counselors",
 };
+<meta property="og:image" content="https://example.com/images/THBHNL.jpg" />;
 
 export default function RootLayout({
   children,
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${folito.className}`}>{children}</body>
+      <body className={`${inter.className} ${folito.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
