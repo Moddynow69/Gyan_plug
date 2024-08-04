@@ -19,6 +19,7 @@ const AboutUsData: {
           more than 150 universities by teaching various advanced technologies
           in collaboration with industry professionals.
           <br />
+          <br/>
           During this journey, we recognized a critical gap in the education
           system: many discerning students end up in the wrong courses or
           colleges due to the lack of professional admission counseling. This

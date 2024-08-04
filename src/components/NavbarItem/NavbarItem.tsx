@@ -12,7 +12,7 @@ export default function NavbarItem({
 }) {
   return (
     <Link
-      href={link}
+      href={ link }
       onClick={() => setMenuopen && setMenuopen(false)}
       className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
     >

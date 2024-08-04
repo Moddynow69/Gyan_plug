@@ -10,7 +10,7 @@ const StoriesCarouselData: StoriesCarouselDataType = [
   {
     topRated: true,
     name: "Maya Desai",
-    location: "Location 1",
+    location: "Pune, India",
     experience:
       "Gyanplug turned my college application stress into a streamlined process. The guidance I received was exceptional, leading me directly to the perfect arts program that aligned with my creative aspirations.",
     admissions: "Admissions 1",
