@@ -3,10 +3,10 @@ import "./globals.css";
 import { folito, inter } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Gyan Plug",
+  title: "GyanPlug",
   description: "Education Counselors",
   openGraph: {
-    title: "Gyan Plug",
+    title: "GyanPlug",
     description: "Education Counselors",
     type: "website",
     locale: "en_US",
