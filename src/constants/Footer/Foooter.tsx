@@ -62,11 +62,11 @@ export const FooterData = {
       subheading: [
         {
           title: "Terms & Conditions",
-          link: "",
+          link: "/tnc",
         },
         {
           title: "Privacy Policy",
-          link: "",
+          link: "/PrivacyPolicy",
         },
       ],
     },
