@@ -3,15 +3,32 @@ export const FooterData = {
     link: "http://app.gyanplug.com/",
     copyRight: "2024 Gyaanplug. All rights reserved.",
   },
-  reachUs: [
-    { img: "icons/call.svg", content: "+91 8088132664" },
+  reachus: [
     {
-      img: "icons/email.svg",
-      content: "info@gyanplug.com",
+      heading: "Contact Us",
+      subheading: [
+        {
+          highlighted: "",
+          title: "+91 8088132664",
+        },
+        {
+          highlighted: "",
+          title: "info@gyanplug.com",
+        },
+      ],
     },
     {
-      img: "icons/location2.svg",
-      content: "Gyanplug, 10th Floor, WeWork, RMZ Latitude Commercial Building, Bellary Rd,  Byatarayanapura, Bengaluru, Karnataka 560024",
+      heading: "Our Offices",
+      subheading: [
+        {
+          highlighted: "(Office)",
+          title: " Gyanplug, 10th Floor, WeWork, RMZ Latitude Commercial Building, Bellary Rd, Byatarayanapura, Bengaluru, Karnataka 560024 ",
+        },
+        {
+          highlighted: "(Registered)",
+          title: "J5, 701, Provident Welworth City, Marasandra, Doddaballapur Road, Yalahanka, Bengaluru, Karnataka - 560064",
+        },
+      ],
     },
   ],
   logo: {
