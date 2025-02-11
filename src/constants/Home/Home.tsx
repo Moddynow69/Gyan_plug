@@ -6,7 +6,7 @@ const home = {
   button: "Book A Free Session",
   buttonLink: "http://app.gyanplug.com/",
   image: "/images/Map.gif",
-  LogosHeading: "Connecting Students with 100+ Top Institutions",
+  LogosHeading: "Uncover Opportunities At Top Institutions",
 };
 
 export default home;
