@@ -1,9 +1,5 @@
 const LogoCarouselData = [
   {
-    src: "/images/College Logos/1.PNG",
-    alt: "University Logo",
-  },
-  {
     src: "/images/College Logos/2.PNG",
     alt: "University Logo",
   },
@@ -69,26 +65,6 @@ const LogoCarouselData = [
   },
   {
     src: "/images/College Logos/18.PNG",
-    alt: "University Logo",
-  },
-  {
-    src: "/images/College Logos/19.PNG",
-    alt: "University Logo",
-  },
-  {
-    src: "/images/College Logos/20.PNG",
-    alt: "University Logo",
-  },
-  {
-    src: "/images/College Logos/21.PNG",
-    alt: "University Logo",
-  },
-  {
-    src: "/images/College Logos/22.PNG",
-    alt: "University Logo",
-  },
-  {
-    src: "/images/College Logos/23.PNG",
     alt: "University Logo",
   },
 ];
