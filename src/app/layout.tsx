@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { folito, inter } from "./fonts";
-import Head from "next/head";
 import Script from "next/script";
 
 export const metadata: Metadata = {
