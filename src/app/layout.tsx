@@ -24,8 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
+      <Script id="meta-pixel" strategy="afterInteractive">
+        {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -37,33 +37,31 @@ export default function RootLayout({
             fbq('init', '1391313745164909');
             fbq('track', 'PageView');
           `}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1391313745164909&ev=PageView&noscript=1"
-          />
-        </noscript>
-
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"
-          strategy="afterInteractive"
+      </Script>
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src="https://www.facebook.com/tr?id=1391313745164909&ev=PageView&noscript=1"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      </noscript>
+
+      {/* Google Tag */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-TVR5DRW8BB"
+        strategy="afterInteractive"
+      />
+      <Script id="google-tag" strategy="afterInteractive">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'YOUR-GA-ID');
+            gtag('config', 'G-TVR5DRW8BB');
           `}
-        </Script>
-
-        {/* Mailchimp */}
-        <Script id="mcjs" strategy="afterInteractive">
-          {`
+      </Script>
+      <Script id="mcjs" strategy="afterInteractive">
+        {`
             !function(c,h,i,m,p){
               m=c.createElement(h),
               p=c.getElementsByTagName(h)[0],
@@ -72,7 +70,7 @@ export default function RootLayout({
               p.parentNode.insertBefore(m,p)
             }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/515e9fdcc4823ccc133f0cfca/d69ab3a568bfa6c2a92142e34.js");
           `}
-        </Script>
+      </Script>
       <body className={`${inter.className} ${folito.className}`}>
         {children}
       </body>
