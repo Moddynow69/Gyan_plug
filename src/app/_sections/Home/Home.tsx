@@ -36,14 +36,14 @@ export default function Home() {
                       cursorChar={""}
                       strings={[home.spanHeading]}
                       typeSpeed={30}
-                      startDelay={800}
+                      startDelay={1800}
                     />
                   </span>{" "}
                   <ReactTyped
                     cursorChar={""}
                     strings={[home.heading2]}
                     typeSpeed={30}
-                    startDelay={1200}
+                    startDelay={3200}
                   />
                 </div>
                 <div className="h-[auto] w-full text-[#0C356A99] md:text-[24px] text-[14px] md:leading-9 leading-5 font-medium">
@@ -51,7 +51,7 @@ export default function Home() {
                     cursorChar={""}
                     strings={[home.subHeading]}
                     typeSpeed={30}
-                    startDelay={2800}
+                    startDelay={3300}
                   />
                 </div>
               </div>

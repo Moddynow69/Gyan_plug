@@ -4,7 +4,7 @@ const home = {
   heading2: ".",
   subHeading: "Discover The College and Course That Aligns With Your Goals!",
   button: "Book A Free Session",
-  buttonLink: "http://app.gyanplug.com/",
+  buttonLink: "http://app.gyanplug.com/user/register/",
   image: "/images/Map.gif",
   LogosHeading: "Uncover Opportunities At Top Institutions",
 };

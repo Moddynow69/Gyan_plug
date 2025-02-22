@@ -1,6 +1,6 @@
 export const FooterData = {
   details: {
-    link: "http://app.gyanplug.com/",
+    link: "http://app.gyanplug.com/user/register/",
     copyRight: "2024 Gyaanplug. All rights reserved.",
   },
   reachus: [

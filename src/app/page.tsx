@@ -10,6 +10,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import How from "./_sections/HowItWorks/How";
 import { Suspense, useState } from "react";
 import Loading from "./loading";
+import HoverButton from "@/components/HoverButton/HoverButton";
 export default function HomePage() {
   const [visible, setVisible] = useState(true);
   const [show, setShow] = useState(true);
@@ -32,6 +33,7 @@ export default function HomePage() {
         onScroll={controlNavbar}
       >
         <Navbar show={show} />
+        <HoverButton show={show} />
         <div className="h-auto w-screen bg-[#F5FBFF] overflow-visible relative">
           <Home />
           <Why />
