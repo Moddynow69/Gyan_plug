@@ -28,22 +28,22 @@ export default function Home() {
                 >
                   <ReactTyped
                     strings={[home.heading1]}
-                    typeSpeed={30}
+                    typeSpeed={20}
                     cursorChar={""}
                   />{" "}
-                  <span className="text-[#14A4E1] whitespace-nowrap">
+                  <span className="text-[#14A4E1]">
                     <ReactTyped
                       cursorChar={""}
                       strings={[home.spanHeading]}
-                      typeSpeed={30}
-                      startDelay={1800}
+                      typeSpeed={20}
+                      startDelay={1200}
                     />
                   </span>{" "}
                   <ReactTyped
                     cursorChar={""}
                     strings={[home.heading2]}
-                    typeSpeed={30}
-                    startDelay={3200}
+                    typeSpeed={20}
+                    startDelay={2200}
                   />
                 </div>
                 <div className="h-[auto] w-full text-[#0C356A99] md:text-[24px] text-[14px] md:leading-9 leading-5 font-medium">
@@ -51,7 +51,7 @@ export default function Home() {
                     cursorChar={""}
                     strings={[home.subHeading]}
                     typeSpeed={30}
-                    startDelay={3300}
+                    startDelay={2300}
                   />
                 </div>
               </div>
